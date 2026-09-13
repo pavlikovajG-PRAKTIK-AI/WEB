@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Moodle quiz in the GIFT format</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <p class="kicker">Worksheet · Faculty of Education, UJEP · October 2026</p>
+    <h1>A Moodle quiz in the GIFT format</h1>
+    <p class="standfirst">Moodle can import an entire quiz at once if you give it a file in the GIFT format. A chatbot writes that file for you and you never have to learn the syntax. Your work is to write the brief, have the result checked and go through it before you present it to your students.</p>
+    <p class="langs"><a href="./">Česká verze</a> · <a href="2026_10_01_GIFT-worksheet.docx">printable version (DOCX)</a></p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section>
+    <div class="band"><span class="no">Basis</span><h2>The procedure</h2><span class="meta">free versions are enough</span></div>
+
+    <ol class="steps">
+      <li>
+        <h3>Write the brief</h3>
+        <p>Open whichever chatbot you use — ChatGPT, Gemini, Claude and Copilot should all handle GIFT even in their free versions — and paste in the template below. Into Source put the text the questions should be based on, or describe the topic and its scope, or attach files and links. Fill in the fields in square brackets according to what you need.</p>
+        <div class="prompt">Create a Moodle quiz in the GIFT format.
+
+Source: [paste the text, or describe the topic and its scope]
+Number of questions: [fill in]
+Question types: [choose from the list below]
+Language: [fill in]
+
+Question types GIFT supports:
+multiple choice with one correct answer · multiple choice with several
+correct answers · true/false · short answer · numerical answer with a
+tolerance · matching · missing word · essay marked by the teacher ·
+descriptive text without a question
+
+Rules:
+- Use the syntax ::question name:: question text { =correct ~wrong ~wrong }
+  and leave a blank line between questions.
+- In multiple-choice questions every wrong answer must be plausible. It has
+  to relate to the topic, be roughly as long and as detailed as the correct
+  answer, and be spelled correctly. Obvious nonsense, joke answers, spelling
+  mistakes and answers that plainly do not belong to the topic are forbidden
+  as distractors.
+- After each wrong answer add a # followed by a short explanation of why it
+  is wrong.
+- Escape the characters ~ = # { } : inside the text with a backslash.
+- Return the GIFT only, with no introduction, no commentary and no code-block
+  markers.</div>
+      </li>
+
+      <li>
+        <h3>Have the result checked</h3>
+        <p>Never skip this step. A chatbot can get things wrong, so the first version of a quiz is not the final one. Paste the completed GIFT back into the conversation and ask for the corrected quiz together with a list of the changes.</p>
+        <div class="prompt">Here is the GIFT you produced. Check the syntax and list separately any
+questions where the answer marked correct is debatable, where more than one
+answer is correct, or where one of the wrong options is not plausible.
+Return the corrected GIFT in full.</div>
+      </li>
+
+      <li>
+        <h3>Ask for the finished file</h3>
+        <p>Ask the chatbot to give you the corrected GIFT directly as a file you can download. That saves you the copying and manual saving during which accented characters most often break, which makes the whole quiz useless. If your chatbot cannot do that, copy the whole text into Notepad and save it as an ordinary text file with the Encoding field set to UTF-8.</p>
+      </li>
+
+      <li>
+        <h3>Import it into Moodle</h3>
+        <p>In your course open the question bank, choose import, select GIFT as the format and upload the file. The wording differs slightly between Moodle versions, but the procedure is the same. Moodle then reports how many questions it loaded, and you check that against your brief. If the number does not match, the syntax is broken somewhere and it is enough to send the text back to the chatbot with the number of missing questions.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section>
+    <div class="band"><span class="no">Checking</span><h2>Before you publish it</h2></div>
+    <ul class="plain">
+      <li>The quickest way to check the quiz is to assemble it from the imported questions, run the preview and work through it with any answers at all. The review page then shows you, for every question together, what is marked as correct and what feedback the student will see.</li>
+      <li>Concentrate on the answers rather than on the questions. The questions are usually fine and the mistakes are almost always in what has been marked correct.</li>
+      <li>Turn on answer shuffling in the quiz settings, because a chatbot puts the correct answer first almost every time and students notice before you do.</li>
+      <li>In questions built from your own text, verify that the answer can genuinely be found in that text. A chatbot may add things the source does not contain.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="band"><span class="no">Extension</span><h2>One level up</h2></div>
+    <ul class="plain">
+      <li>Answers that are only partly correct can be awarded part of the marks. They are written as <code>~%50%answer text</code> and are useful wherever there is no single correct option but some are better than others.</li>
+      <li>The line <code>$CATEGORY: name</code> at the top of the file files the questions straight into your own folder in the question bank. They then do not mix with the rest and you can easily find them next time.</li>
+      <li>Once you have enough questions in the bank, you can put a random selection from a category into the quiz instead of specific questions. Each student then gets a different set and the same quiz can be used repeatedly.</li>
+    </ul>
+  </section>
+
+  <div class="warn">
+    <p><b>The limitation said out loud.</b> The correct answers have to be checked in every question rather than in a sample, because on specialist content a chatbot gets things wrong while sounding entirely certain. The source text you paste in leaves for an external service, so consider what you are sending with unpublished material. And a quiz being easy to produce is not in itself a reason to set it.</p>
+  </div>
+
+  <footer>
+    <p>Jana Pavlíková, M.A., Ph.D. · Department of English · Faculty of Education, UJEP · jana.pavlikova@ujep.cz</p>
+  </footer>
+
+</div>
+</body>
+</html>

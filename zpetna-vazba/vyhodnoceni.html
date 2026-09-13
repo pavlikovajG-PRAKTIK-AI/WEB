@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vyhodnocení odpovědí</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <p class="kicker">Pracovní nástroj · PF UJEP</p>
+    <h1>Vyhodnocení odpovědí</h1>
+    <p class="standfirst">Vložte sem obsah došlých e-mailů — klidně všechny najednou a včetně okolního textu. Načtou se jen řádky začínající <code>DATA v1|</code>.</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section>
+    <textarea class="data" id="src" placeholder="Sem vložte text e-mailů…"></textarea>
+    <div class="actions">
+      <button class="primary" id="run" type="button">Spočítat</button>
+      <button class="ghost" id="clear" type="button">Vymazat</button>
+      <span class="status" id="status"></span>
+    </div>
+  </section>
+
+  <section id="out"></section>
+
+  <footer>
+    <p>Všechno se počítá ve vašem prohlížeči. Nic se nikam neodesílá ani neukládá — po zavření stránky tu nic nezůstane.</p>
+  </footer>
+
+</div>
+
+<script src="otazky.js"></script>
+<script>
+(function () {
+  var GROUPS = [
+    { key: "zdrzuje", title: "Co je nejvíc zdržuje" },
+    { key: "chce",    title: "Co se chtějí naučit" },
+    { key: "zkusil",  title: "S čím už AI zkoušeli" },
+    { key: "placena", title: "Placená verze" }
+  ];
+
+  function labelOf(key, k) {
+    var f = window.Q[key].filter(function (x) { return x.k === k; })[0];
+    return f ? f.cs : k + " (neznámá položka)";
+  }
+
+  function parse(text) {
+    var recs = [];
+    text.split(/\r?\n/).forEach(function (line) {
+      line = line.trim();
+      if (line.indexOf("DATA v1|") !== 0) return;
+      var rec = {};
+      line.slice(8).split("|").forEach(function (pair) {
+        var i = pair.indexOf("=");
+        if (i < 0) return;
+        var k = pair.slice(0, i).trim();
+        var v = pair.slice(i + 1).trim();
+        rec[k] = v ? v.split(",").map(function (s) { return s.trim(); }).filter(Boolean) : [];
+      });
+      recs.push(rec);
+    });
+    return recs;
+  }
+
+  function tally(recs, key) {
+    var counts = {};
+    recs.forEach(function (r) {
+      (r[key] || []).forEach(function (k) { counts[k] = (counts[k] || 0) + 1; });
+    });
+    return Object.keys(counts).map(function (k) { return { k: k, n: counts[k] }; })
+      .sort(function (a, b) { return b.n - a.n || a.k.localeCompare(b.k, "cs"); });
+  }
+
+  function el(tag, cls, txt) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (txt !== undefined) e.textContent = txt;
+    return e;
+  }
+
+  function render(recs) {
+    var out = document.getElementById("out");
+    out.innerHTML = "";
+    if (!recs.length) {
+      out.appendChild(el("p", "lede", "Žádný řádek DATA v1| jsem nenašla. Zkontrolujte, jestli jste vložili celý text e-mailů."));
+      return;
+    }
+
+    var head = el("div", "band");
+    head.appendChild(el("span", "no", "Souhrn"));
+    head.appendChild(el("h2", null, "Odpovědí: " + recs.length));
+    out.appendChild(head);
+
+    var depts = {};
+    recs.forEach(function (r) {
+      var d = (r.katedra && r.katedra[0]) ? r.katedra[0] : "?";
+      depts[d] = (depts[d] || 0) + 1;
+    });
+    var dlist = Object.keys(depts).sort(function (a, b) { return a.localeCompare(b, "cs"); })
+      .map(function (d) { return d + (depts[d] > 1 ? " (" + depts[d] + "×)" : ""); });
+    out.appendChild(el("p", "lede", "Katedry: " + dlist.join(", ")));
+
+    GROUPS.forEach(function (g) {
+      var rows = tally(recs, g.key);
+      var b = el("div", "band");
+      b.appendChild(el("span", "no", "Otázka"));
+      b.appendChild(el("h2", null, g.title));
+      out.appendChild(b);
+
+      if (!rows.length) { out.appendChild(el("p", "lede", "Nikdo nic nezaškrtl.")); return; }
+
+      var max = rows[0].n;
+      var t = el("table", "tally");
+      var tr = el("tr");
+      tr.appendChild(el("th", null, "Položka"));
+      tr.appendChild(el("th", null, "Počet"));
+      tr.appendChild(el("th", null, ""));
+      t.appendChild(tr);
+
+      rows.forEach(function (r) {
+        var row = el("tr");
+        row.appendChild(el("td", null, labelOf(g.key, r.k)));
+        row.appendChild(el("td", "n", String(r.n)));
+        var bar = el("td", "bar");
+        var fill = el("span", "fill");
+        fill.style.width = Math.round(r.n / max * 100) + "%";
+        bar.appendChild(fill);
+        row.appendChild(bar);
+        t.appendChild(row);
+      });
+      out.appendChild(t);
+    });
+  }
+
+  document.getElementById("run").addEventListener("click", function () {
+    var recs = parse(document.getElementById("src").value);
+    document.getElementById("status").textContent = "Načteno " + recs.length + " odpovědí.";
+    render(recs);
+  });
+  document.getElementById("clear").addEventListener("click", function () {
+    document.getElementById("src").value = "";
+    document.getElementById("out").innerHTML = "";
+    document.getElementById("status").textContent = "";
+  });
+})();
+</script>
+</body>
+</html>

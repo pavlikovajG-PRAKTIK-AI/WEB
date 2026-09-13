@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Test do Moodlu ve formátu GIFT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <p class="kicker">Pracovní list · PF UJEP · říjen 2026</p>
+    <h1>Test do Moodlu ve formátu GIFT</h1>
+    <p class="standfirst">Moodle umí naimportovat celý test najednou, pokud dostane soubor ve formátu GIFT. Ten soubor za vás napíše chatbot a jeho syntaxi se učit nemusíte. Vaše práce je napsat zadání, nechat si výsledek zkontrolovat a projít ho dřív, než ho předložíte studentům.</p>
+    <p class="langs"><a href="en.html">English version</a> · <a href="2026_10_01_Pracovni-list-GIFT.docx">verze k tisku (DOCX)</a></p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section>
+    <div class="band"><span class="no">Základ</span><h2>Postup</h2><span class="meta">bezplatné verze stačí</span></div>
+
+    <ol class="steps">
+      <li>
+        <h3>Napište zadání</h3>
+        <p>Otevřete chatbota, kterého používáte — ChatGPT, Gemini, Claude i Copilot by měly zvládnout GIFT i v bezplatné verzi — a vložte mu šablonu níže. Do pole Zdroj dejte text, ze kterého se má zkoušet, nebo popište téma a rozsah učiva, případně připojte soubory a odkazy. Pole v hranatých závorkách doplňte podle toho, co potřebujete.</p>
+        <div class="prompt">Vytvoř test do Moodlu ve formátu GIFT.
+
+Zdroj: [vložte text, nebo popište téma a rozsah učiva]
+Počet otázek: [doplňte]
+Typ otázek: [vyberte z nabídky níže]
+Jazyk: [doplňte]
+
+Typy otázek, které GIFT umí:
+výběr z možností s jednou správnou odpovědí · výběr z možností s více
+správnými odpověďmi · pravda/nepravda · krátká odpověď · numerická
+odpověď s tolerancí · přiřazování · doplnění chybějícího slova do věty ·
+dlouhá odpověď, kterou hodnotí vyučující · popisný text bez otázky
+
+Pravidla:
+- Použij syntaxi ::název otázky:: text otázky { =správná ~nesprávná ~nesprávná }
+  a mezi otázkami nech prázdný řádek.
+- U otázek s výběrem z možností musí být všechny nesprávné odpovědi
+  věrohodné. Musí se týkat tématu, být přibližně stejně dlouhé a podrobné
+  jako správná odpověď a musí být pravopisně správně. Zjevné nesmysly,
+  žertovné odpovědi, pravopisné chyby a odpovědi, které do tématu zjevně
+  nepatří, jsou jako nesprávné možnosti zakázané.
+- Ke každé nesprávné odpovědi připoj za znak # krátké vysvětlení, proč
+  je špatně.
+- Znaky ~ = # { } : uvnitř textu escapuj zpětným lomítkem.
+- Vrať jen samotný GIFT, bez úvodu, bez komentáře a bez značek pro blok kódu.</div>
+      </li>
+
+      <li>
+        <h3>Nechte si výsledek zkontrolovat</h3>
+        <p>Tenhle krok nikdy nepřeskakujte. Chatbot se může mýlit, takže první verze testu není finální. Vložte hotový GIFT zpět do rozhovoru a vyžádejte si opravený test a seznam změn.</p>
+        <div class="prompt">Tady je GIFT, který jsi vytvořil. Zkontroluj syntaxi a zvlášť vypiš otázky,
+u kterých je označená správná odpověď sporná, správných odpovědí je víc
+nebo je některá z nesprávných možností nevěrohodná. Opravený GIFT vrať celý.</div>
+      </li>
+
+      <li>
+        <h3>Vyžádejte si hotový soubor</h3>
+        <p>Požádejte chatbota, aby vám opravený GIFT dal rovnou jako soubor ke stažení. Ušetříte si tím kopírování a ruční ukládání, při kterém se nejčastěji rozsype diakritika a test je pak k ničemu. Pokud to váš chatbot neumí, zkopírujte celý text do Poznámkového bloku a uložte ho jako běžný textový soubor, v poli Kódování nastavené na UTF-8.</p>
+      </li>
+
+      <li>
+        <h3>Naimportujte do Moodlu</h3>
+        <p>V kurzu otevřete banku otázek, zvolte import, jako formát vyberte GIFT a nahrajte soubor. Názvy položek se podle verze Moodlu mírně liší, ale postup je stejný. Po importu vám Moodle napíše, kolik otázek načetl, a vy to zkontrolujte proti svému zadání. Pokud počet nesedí, je někde chyba v syntaxi a stačí poslat text chatbotovi zpět s informací, kolik otázek chybí.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section>
+    <div class="band"><span class="no">Kontrola</span><h2>Než test zveřejníte</h2></div>
+    <ul class="plain">
+      <li>Nejrychleji test zkontrolujete tak, že z naimportovaných otázek sestavíte test, spustíte náhled a projdete ho s libovolnými odpověďmi. Na stránce s výsledky pak vidíte u všech otázek pohromadě, co je označené jako správné a jaká zpětná vazba se studentovi zobrazí.</li>
+      <li>Soustřeďte se na odpovědi, ne na otázky. Otázky bývají v pořádku a chyby jsou skoro vždy v tom, co je označené jako správné.</li>
+      <li>Zapněte v nastavení testu přeházení odpovědí, protože chatbot dává správnou odpověď skoro vždy jako první a studenti si toho všimnou dřív než vy.</li>
+      <li>U otázek vytvořených z vlastního textu si ověřte, že se odpověď z toho textu opravdu dá vyčíst. Chatbot může doplnit i to, co ve zdroji není.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="band"><span class="no">Rozšíření</span><h2>O stupeň dál</h2></div>
+    <ul class="plain">
+      <li>Odpovědi, které jsou jen částečně správné, se dají ohodnotit částí bodů. Zapisují se jako <code>~%50%text odpovědi</code> a hodí se všude tam, kde není jediná správná možnost, ale některé jsou lepší než jiné.</li>
+      <li>Řádek <code>$CATEGORY: název</code> na začátku souboru uloží otázky rovnou do vlastní složky v bance otázek. Nemíchají se vám pak s ostatními a příště je snadno najdete.</li>
+      <li>Až budete mít v bance dost otázek, můžete do testu místo konkrétních otázek vložit náhodný výběr z kategorie. Každý student pak dostane jinou sestavu a stejný test se dá zadat opakovaně.</li>
+    </ul>
+  </section>
+
+  <div class="warn">
+    <p><b>Limit, který se řekne nahlas.</b> Správné odpovědi je potřeba zkontrolovat u všech otázek, ne namátkou, protože u odborného obsahu se chatbot plete a zní přitom naprosto jistě. Zdrojový text, který mu vložíte, odchází do cizí služby, takže u nepublikovaných materiálů zvažte, co tam posíláte. A to, že je test hotový snadno, není samo o sobě důvod ho zadávat.</p>
+  </div>
+
+  <footer>
+    <p>Mgr. Jana Pavlíková, M.A., Ph.D. · Katedra anglistiky · PF UJEP · jana.pavlikova@ujep.cz</p>
+  </footer>
+
+</div>
+</body>
+</html>

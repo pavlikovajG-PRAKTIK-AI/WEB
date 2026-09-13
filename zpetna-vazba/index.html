@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Co potřebujete — ambasadoři PF</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <p class="kicker">Ambasadoři kateder · PF UJEP</p>
+    <h1>Co potřebujete</h1>
+    <p class="standfirst">Zaškrtejte, co se vás týká. Podle vašich odpovědí vyberu témata, o kterých se budeme bavit na dalších setkáních, aby to nebylo podle mého odhadu.</p>
+    <p class="langs"><a href="en.html">English version</a></p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section>
+    <p class="lede">Formulář nikam nic neodesílá ani neukládá, jen složí text, který mi pošlete ze své schránky. Nemusíte vyplnit všechno, a co nevíte, nechte být.</p>
+
+    <fieldset>
+      <legend>1 · Katedra</legend>
+      <p class="hint">Stačí zkratka.</p>
+      <input type="text" id="katedra" maxlength="40" placeholder="např. KAJ">
+    </fieldset>
+
+    <fieldset>
+      <legend>2 · Co vás v práci nejvíc zdržuje</legend>
+      <p class="hint">Zaškrtněte klidně víc věcí. Jde o to, co vám ubírá čas, ne o to, kde by mohla pomoct AI.</p>
+      <div class="opts" id="g-zdrzuje"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>3 · S čím jste AI už zkoušel/a</legend>
+      <p class="hint">Zaškrtněte všechno, co jste zkusili, bez ohledu na to, jak to dopadlo.</p>
+      <div class="opts" id="g-zkusil"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>4 · Máte placenou verzi?</legend>
+      <p class="hint">Podle toho poznám, co můžu na setkání ukazovat, aby to zvládli všichni.</p>
+      <div class="opts" id="g-placena"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>5 · Co byste se chtěl/a naučit</legend>
+      <p class="hint">Jsou to návrhy témat na příští měsíce. Bude se z nich vybírat a nic z toho zatím není slíbené.</p>
+      <div class="opts" id="g-chce"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>6 · Kde jste to vzdal/a</legend>
+      <p class="hint">Stačí jedna věta a vyplňovat ji nemusíte. Pro mě je to nejcennější odpověď z celého formuláře, protože z úspěchů se toho o překážkách moc nedozvím.</p>
+      <textarea id="vzdal" maxlength="300" placeholder="Zkusil/a jsem… a přestal/a jsem, protože…"></textarea>
+    </fieldset>
+
+    <div class="actions">
+      <button class="primary" id="send" type="button">Odeslat e-mailem</button>
+      <button class="ghost" id="copy" type="button">Zkopírovat text</button>
+      <span class="status" id="status"></span>
+    </div>
+    <p class="hint" style="margin-top:12px">Tlačítko otevře váš poštovní program s hotovým textem a odeslání potvrzujete vy. Pokud se nic neotevře, použijte <em>Zkopírovat text</em> a vložte ho do e-mailu na jana.pavlikova@ujep.cz.</p>
+
+    <div id="fallback" class="hidden">
+      <textarea class="data" id="fbtext" readonly></textarea>
+    </div>
+  </section>
+
+  <footer>
+    <p>Mgr. Jana Pavlíková, M.A., Ph.D. · Katedra anglistiky · PF UJEP · jana.pavlikova@ujep.cz</p>
+  </footer>
+
+</div>
+
+<script>
+window.L = {
+  title: "Zpětná vazba ambasadora — PF UJEP",
+  subject: "Ambasadoři PF — co potřebuji",
+  dept: "Katedra",
+  hZdrzuje: "Nejvíc mě zdržuje",
+  hZkusil: "S AI jsem zkoušel/a",
+  hPlacena: "Placená verze",
+  hChce: "Chtěl/a bych se naučit",
+  hVzdal: "Kde jsem to vzdal/a",
+  none: "nic nezaškrtnuto",
+  sent: "Otevírám poštovní program.",
+  copied: "Zkopírováno. Vložte do e-mailu na jana.pavlikova@ujep.cz.",
+  manual: "Kopírování v tomhle prohlížeči nefunguje — označte text níže a zkopírujte ho ručně."
+};
+</script>
+<script src="otazky.js"></script>
+<script src="form.js"></script>
+</body>
+</html>

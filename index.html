@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+<!--
+  ŽIVÝ WEB:  https://pavlikovajg-praktik-ai.github.io/WEB/
+  REPO:      https://github.com/pavlikovajG-PRAKTIK-AI/WEB
+  NA DISKU:  C:\Users\Pavlikovaj\Desktop\Jana\_AI_APPS\GithubWEB
+
+  Obsah repa a této složky se musí vždy shodovat — po každé úpravě commit a push.
+  Publikuje se z větve main, kořen repozitáře. Změna je online do cca minuty.
+-->
 <html lang="cs">
 <head>
 <meta charset="utf-8">
@@ -7,68 +15,52 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
-<style>
-:root{
-  --ground:#F6F8F6; --surface:#FFFFFF;
-  --ink:#15201E; --ink-soft:#4C5A56; --ink-faint:#77837F;
-  --rule:#DBE2DD; --rule-strong:#C3CEC8;
-  --accent:#0E5A56; --accent-ink:#0A4643; --accent-soft:#E1EFEC;
-  --serif:"Newsreader",Georgia,serif;
-  --sans:"IBM Plex Sans","Segoe UI",Arial,sans-serif;
-}
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){
-    --ground:#111614; --surface:#19201D;
-    --ink:#E9EEEB; --ink-soft:#9EACA7; --ink-faint:#7C8A85;
-    --rule:#2B3733; --rule-strong:#3B4844;
-    --accent:#63BFB4; --accent-ink:#8FD6CC; --accent-soft:#16302C;
-  }
-}
-:root[data-theme="dark"]{
-  --ground:#111614; --surface:#19201D;
-  --ink:#E9EEEB; --ink-soft:#9EACA7; --ink-faint:#7C8A85;
-  --rule:#2B3733; --rule-strong:#3B4844;
-  --accent:#63BFB4; --accent-ink:#8FD6CC; --accent-soft:#16302C;
-}
-*{box-sizing:border-box}
-body{background:var(--ground);color:var(--ink);font-family:var(--sans);
-  font-size:16px;line-height:1.6;margin:0;-webkit-font-smoothing:antialiased}
-.wrap{max-width:620px;margin:0 auto;padding:64px 24px 96px}
-.kicker{font-size:12px;letter-spacing:.13em;text-transform:uppercase;
-  color:var(--accent);font-weight:600;margin:0 0 14px}
-h1{font-family:var(--serif);font-weight:600;font-size:clamp(28px,5vw,38px);
-  line-height:1.15;margin:0 0 14px;text-wrap:balance}
-.standfirst{font-family:var(--serif);font-size:18px;line-height:1.5;
-  color:var(--ink-soft);margin:0 0 44px}
-ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
-li a{display:block;background:var(--surface);border:1px solid var(--rule);
-  border-radius:3px;padding:18px 20px;text-decoration:none;color:var(--ink)}
-li a:hover{border-color:var(--accent);background:var(--accent-soft)}
-li a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-.t{font-weight:600;font-size:17px;display:block;margin-bottom:3px}
-.d{font-size:14.5px;color:var(--ink-soft)}
-footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--rule);
-  font-size:14px;color:var(--ink-faint)}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrap">
-  <p class="kicker">PF UJEP</p>
-  <h1>Materiály — Jana Pavlíková</h1>
-  <p class="standfirst">Pracovní listy a podklady ke sdílení. Stránky jsou veřejné, ale nejsou nikde vypsané — otevřou se jen z odkazu, který dostanete.</p>
 
-  <ul>
-    <li>
-      <a href="pracovni-list/">
-        <span class="t">Gem pro vaši katedru</span>
-        <span class="d">Formulář o katedře, návod k založení Gemu a šest testovacích otázek. Pro kontaktní osoby z kateder.</span>
-      </a>
-    </li>
-  </ul>
+<header class="masthead">
+  <div class="wrap">
+    <p class="kicker">PF UJEP</p>
+    <h1>Materiály — Jana Pavlíková</h1>
+    <p class="standfirst">Pracovní listy a podklady ke sdílení, nejnovější jsou nahoře. Stránky jsou veřejné, ale nejsou nikde vypsané, takže se otevřou jen z odkazu, který dostanete.</p>
+    <p class="langs"><a href="en.html">English version</a></p>
+  </div>
+</header>
+
+<div class="wrap">
+  <section style="margin-top:36px">
+    <ul class="cards">
+      <li>
+        <a href="zpetna-vazba/">
+          <span class="when">Říjen 2026 · formulář</span>
+          <span class="t">Co potřebujete</span>
+          <span class="d">Zaškrtávací formulář pro ambasadory kateder. Podle odpovědí vybírám témata dalších setkání.</span>
+        </a>
+        <p class="alt"><a href="zpetna-vazba/en.html">English</a></p>
+      </li>
+      <li>
+        <a href="2026_10_01_gift/">
+          <span class="when">Říjen 2026 · pracovní list</span>
+          <span class="t">Test do Moodlu ve formátu GIFT</span>
+          <span class="d">Jak nechat chatbota napsat test, jak si ho nechat zkontrolovat a jak ho projít v Moodlu dřív, než ho pustíte na studenty.</span>
+        </a>
+        <p class="alt"><a href="2026_10_01_gift/en.html">English</a> · <a href="2026_10_01_gift/2026_10_01_Pracovni-list-GIFT.docx">verze k tisku (DOCX)</a></p>
+      </li>
+      <li>
+        <a href="pracovni-list/">
+          <span class="when">Září 2026 · pracovní list</span>
+          <span class="t">Gem pro vaši katedru</span>
+          <span class="d">Formulář o katedře, návod k založení Gemu a testovací otázky. Pro kontaktní osoby z kateder.</span>
+        </a>
+      </li>
+    </ul>
+  </section>
 
   <footer>
     <p>jana.pavlikova@ujep.cz</p>
   </footer>
 </div>
+
 </body>
 </html>

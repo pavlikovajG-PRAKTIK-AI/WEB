@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What you need — Faculty of Education ambassadors</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <p class="kicker">Departmental ambassadors · Faculty of Education, UJEP</p>
+    <h1>What you need</h1>
+    <p class="standfirst">Tick what applies to you. I will choose the topics for our next sessions from your answers rather than from my own guess.</p>
+    <p class="langs"><a href="./">Česká verze</a></p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section>
+    <p class="lede">The form neither sends nor stores anything; it only assembles a text that you send from your own mailbox. You do not have to complete everything, so leave out whatever you are unsure about.</p>
+
+    <fieldset>
+      <legend>1 · Department</legend>
+      <p class="hint">The abbreviation is enough.</p>
+      <input type="text" id="katedra" maxlength="40" placeholder="e.g. KAJ">
+    </fieldset>
+
+    <fieldset>
+      <legend>2 · What takes up most of your time</legend>
+      <p class="hint">Tick as many as you like. This is about what costs you time, not about where AI might help.</p>
+      <div class="opts" id="g-zdrzuje"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>3 · What you have already tried</legend>
+      <p class="hint">Tick everything you have tried, regardless of how it turned out.</p>
+      <div class="opts" id="g-zkusil"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>4 · Do you have a paid plan?</legend>
+      <p class="hint">This tells me what I can demonstrate so that everyone can follow along.</p>
+      <div class="opts" id="g-placena"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>5 · What you would like to learn</legend>
+      <p class="hint">These are candidate topics for the coming months. A selection will be made from them and none of them is promised yet.</p>
+      <div class="opts" id="g-chce"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>6 · Where you gave up</legend>
+      <p class="hint">One sentence is enough and you do not have to write it. It is the most valuable answer in the whole form, because the successes tell me little about the obstacles.</p>
+      <textarea id="vzdal" maxlength="300" placeholder="I tried… and stopped because…"></textarea>
+    </fieldset>
+
+    <div class="actions">
+      <button class="primary" id="send" type="button">Send by e-mail</button>
+      <button class="ghost" id="copy" type="button">Copy the text</button>
+      <span class="status" id="status"></span>
+    </div>
+    <p class="hint" style="margin-top:12px">The button opens your mail client with the text ready and you confirm the sending yourself. If nothing opens, use <em>Copy the text</em> and paste it into an e-mail to jana.pavlikova@ujep.cz.</p>
+
+    <div id="fallback" class="hidden">
+      <textarea class="data" id="fbtext" readonly></textarea>
+    </div>
+  </section>
+
+  <footer>
+    <p>Jana Pavlíková, M.A., Ph.D. · Department of English · Faculty of Education, UJEP · jana.pavlikova@ujep.cz</p>
+  </footer>
+
+</div>
+
+<script>
+window.L = {
+  title: "Ambassador feedback — Faculty of Education, UJEP",
+  subject: "Ambassadors — what I need",
+  dept: "Department",
+  hZdrzuje: "Takes up most of my time",
+  hZkusil: "Already tried",
+  hPlacena: "Paid plan",
+  hChce: "Would like to learn",
+  hVzdal: "Where I gave up",
+  none: "nothing ticked",
+  sent: "Opening your mail client.",
+  copied: "Copied. Paste it into an e-mail to jana.pavlikova@ujep.cz.",
+  manual: "Copying does not work in this browser — select the text below and copy it manually."
+};
+</script>
+<script src="otazky.js"></script>
+<script src="form.js"></script>
+</body>
+</html>
