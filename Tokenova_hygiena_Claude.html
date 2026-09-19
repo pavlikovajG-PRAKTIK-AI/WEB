@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tokenová hygiena</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#F6F7F4; --surface:#FFFFFF; --ink:#1E2A30; --ink-2:#4D5C64; --ink-3:#7B8890;
+  --line:#DDE3E0; --accent:#0E6E66; --accent-soft:#E3F0EC; --accent-ink:#0A544E;
+  --warn:#9A5B00; --warn-soft:#FBEFD9; --code-bg:#EEF2F0;
+  --red:#B3261E; --red-soft:#FBEAE8;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#131A1D; --surface:#1B2429; --ink:#E6ECEA; --ink-2:#AEBBB7; --ink-3:#7E8C89;
+    --line:#2C3A3F; --accent:#5FC4B7; --accent-soft:#1B3330; --accent-ink:#9EDDD3;
+    --warn:#E3B061; --warn-soft:#3A2E17; --code-bg:#243036;
+    --red:#F28B82; --red-soft:#3A1F1D;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#131A1D; --surface:#1B2429; --ink:#E6ECEA; --ink-2:#AEBBB7; --ink-3:#7E8C89;
+  --line:#2C3A3F; --accent:#5FC4B7; --accent-soft:#1B3330; --accent-ink:#9EDDD3;
+  --warn:#E3B061; --warn-soft:#3A2E17; --code-bg:#243036;
+  --red:#F28B82; --red-soft:#3A1F1D;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:16px/1.55 "IBM Plex Sans",system-ui,sans-serif;padding-block:40px 64px;padding-inline:clamp(16px,4vw,48px);margin:0}
+.wrap{max-width:1040px;margin:0 auto}
+h1,h2,h3{font-family:"Literata",Georgia,serif;text-wrap:balance;margin:0;font-weight:600}
+h1{font-size:clamp(30px,4vw,42px);line-height:1.15;letter-spacing:-.01em}
+h2{font-size:24px;line-height:1.25}
+h3{font-size:17px;line-height:1.3;font-weight:600}
+p{margin:0}
+.lede{color:var(--ink-2);font-size:17px;max-width:62ch;margin-top:14px}
+.eyebrow{font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);font-weight:600}
+header{padding-bottom:28px;border-bottom:1px solid var(--line);margin-bottom:36px}
+.meta{color:var(--ink-3);font-size:13px;margin-top:18px}
+code,kbd{font-family:"IBM Plex Mono",Consolas,monospace;font-size:.9em;background:var(--code-bg);padding:1px 6px;border-radius:4px}
+section{margin-top:44px}
+section>h2{padding-bottom:8px}
+.sub{color:var(--ink-2);max-width:65ch;margin-top:6px;margin-bottom:20px}
+
+/* slovníček */
+.gloss{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:22px 24px}
+.gloss h2{font-size:20px;margin-bottom:4px}
+.gloss .sub{margin-bottom:16px}
+dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px 28px;margin:0}
+dl div{padding:8px 0;border-top:1px solid var(--line)}
+dt{font-weight:600;color:var(--accent-ink)}
+dt em{font-style:normal;font-weight:400;color:var(--ink-3);font-size:14px}
+dd{margin:2px 0 0;color:var(--ink-2);font-size:15px}
+
+/* principy */
+.principles{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.pr{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:18px 18px 16px}
+.pr h3{color:var(--accent-ink);margin-bottom:6px}
+.pr p{color:var(--ink-2);font-size:15px}
+.pr.hl{border:2px solid var(--red);background:var(--red-soft)}
+.pr.hl h3{color:var(--red)}
+.pr.hl p{color:var(--ink)}
+
+/* tabulka */
+table{width:100%;border-collapse:collapse;font-size:15px}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-3);font-weight:600}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:500;min-width:160px}
+.tag{display:inline-block;font-size:12px;padding:2px 8px;border-radius:999px;background:var(--accent-soft);color:var(--accent-ink);font-weight:500}
+.tag.w{background:var(--warn-soft);color:var(--warn)}
+
+/* tři prostředí */
+.surface{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:24px;margin-top:18px}
+.surface header{border:0;padding:0;margin:0 0 14px}
+.surface .hint{color:var(--ink-3);font-size:14px;margin-top:4px;max-width:70ch}
+ol.rules{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+ol.rules li{display:grid;grid-template-columns:minmax(0,1fr);gap:4px;padding:12px 0;border-top:1px solid var(--line)}
+ol.rules li:first-child{border-top:0;padding-top:0}
+.rule{font-weight:600}
+.why{color:var(--ink-2);font-size:15px}
+.src{font-size:12.5px;color:var(--ink-3)}
+@media (min-width:720px){
+  ol.rules li{grid-template-columns:minmax(0,1.1fr) minmax(0,1.5fr) 100px;gap:16px;align-items:start}
+  .src{text-align:right}
+}
+
+/* zdroje */
+.sources{columns:2;column-gap:32px;font-size:14px;color:var(--ink-2);padding-left:20px}
+.sources li{break-inside:avoid;margin-bottom:6px}
+.sources a{color:var(--accent-ink);text-decoration-color:var(--line)}
+@media (max-width:640px){.sources{columns:1}}
+.note{background:var(--warn-soft);border-left:3px solid var(--warn);padding:12px 16px;border-radius:0 6px 6px 0;font-size:15px;color:var(--ink-2);margin-top:20px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+<header>
+  <p class="eyebrow">Claude · chat, Cowork, Claude Code</p>
+  <h1>Tokenová hygiena</h1>
+  <p class="lede">Jak pracovat s Claudem tak, aby spotřeboval méně „paliva“ a abyste nenaráželi na denní a týdenní limity. Přehled vychází z oficiální dokumentace Anthropic, doplněné o osvědčené návyky uživatelů (X, Substack, blogy). U každé zásady je vysvětleno, proč funguje.</p>
+  <p class="meta">Sestaveno 15. 9. 2026 · Jeden společný limit platí pro chat, Cowork i Claude Code. Co utratíte v jednom, chybí v ostatních.</p>
+</header>
+
+<section class="gloss">
+  <h2>Slovníček: sedm pojmů, které stačí znát</h2>
+  <p class="sub">Anglické termíny se v prostředí Claude běžně používají, proto je necháváme. Tady je jejich význam.</p>
+  <dl>
+    <div><dt>Token</dt><dd>Základní jednotka textu, kterou model zpracovává. Zhruba čtvrtina až polovina slova. Platí se jak za tokeny, které Claudovi pošlete, tak za ty, které napíše. Ty psané jsou asi 5× dražší.</dd></div>
+    <div><dt>Kontext <em>(context, kontextové okno)</em></dt><dd>Všechno, co Claude v dané konverzaci „vidí“: vaše zprávy, jeho odpovědi, přiložené soubory, výsledky hledání. Klíčové: <strong>celý kontext se znovu odesílá a zpracovává s každou vaší zprávou</strong>.</dd></div>
+    <div><dt>Cache <em>(mezipaměť promptu)</em></dt><dd>Zkratka pro úsporu: část kontextu, kterou už Claude jednou zpracoval, si systém krátce pamatuje (1 hodinu na předplatném) a při další zprávě ji účtuje jen za desetinu ceny. Když cache „vyprší“ nebo se zneplatní, celý kontext se zpracuje a zaplatí znovu v plné výši.</dd></div>
+    <div><dt>Model <em>(Haiku, Sonnet, Opus, Fable)</em></dt><dd>Různě velké verze Clauda. Haiku je nejmenší a nejlevnější, Sonnet střední, Opus a Fable největší a nejdražší. Většinu běžné práce zvládne Sonnet stejně dobře.</dd></div>
+    <div><dt>Effort a extended thinking <em>(úroveň úsilí, rozšířené uvažování)</em></dt><dd>Nastavení, kolik si Claude smí „promyslet“ před odpovědí. Toto uvažování se účtuje jako psaný text a u složitých úloh může být delší než samotná odpověď. Úrovně: low, medium, high, xhigh, max.</dd></div>
+    <div><dt>Konektory a MCP <em>(nástroje)</em></dt><dd>Napojení Clauda na vnější služby: web, Google Drive, e-mail, databáze. Každý zapnutý konektor přidává do kontextu popis toho, co umí, i když ho zrovna nepoužijete.</dd></div>
+    <div><dt>Projekt <em>(Project)</em></dt><dd>Složka v Claude.ai, do které nahrajete dokumenty a instrukce jednou. Všechny konverzace v Projektu je pak sdílí a jejich opakované použití se do limitu nepočítá.</dd></div>
+  </dl>
+</section>
+
+<section>
+  <h2>Jedna mechanika, ze které plyne všechno</h2>
+  <p class="sub">Claude si nepamatuje. S každou vaší zprávou znovu čte celou konverzaci od začátku: všechny předchozí zprávy, přiložené soubory, výsledky hledání. Cena zprávy proto neroste podle toho, na co se ptáte, ale podle toho, kolik toho v konverzaci už je. Krátká otázka na konci dlouhé konverzace stojí skoro stejně jako dlouhá.</p>
+  <div class="principles">
+    <div class="pr"><h3>Krátké konverzace</h3><p>Nové téma = nová konverzace. Několik kratších chatů vyjde levněji než jeden dlouhý, i když v součtu obsahují stejný text.</p></div>
+    <div class="pr"><h3>Přiměřený model a úsilí</h3><p>Sonnet nebo Haiku na běžnou práci, Opus/Fable jen tam, kde je potřeba náročné uvažování. Nižší effort = méně placeného „přemýšlení“.</p></div>
+    <div class="pr"><h3>Vypnout, co nepotřebujete</h3><p>Web search, Research, konektory a extended thinking stojí tokeny při každé odpovědi, i když se nakonec nevyužijí.</p></div>
+    <div class="pr"><h3>Více otázek do jedné zprávy</h3><p>Související dotazy pošlete najednou a zadejte je konkrétně. Každá zpráva navíc znamená další načtení celé konverzace.</p></div>
+    <div class="pr hl"><h3>Neměnit nastavení během konverzace</h3><p>Model, effort i rychlý režim (fast mode) jsou součástí cache. Jakmile něco z toho během konverzace přepnete, úspora z cache se ztratí a celá konverzace se zpracuje znovu za plnou cenu. Nastavte je na začátku.</p></div>
+    <div class="pr"><h3>Psaný text je dražší než čtený</h3><p>Tokeny, které Claude píše (včetně uvažování), stojí zhruba 5× více než ty, které čte. Žádejte jen tolik textu, kolik skutečně potřebujete.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Co spotřebovává nejvíc</h2>
+  <p class="sub">Podle oficiálního přehledu spotřeby od Anthropic.</p>
+  <div class="tbl"><table>
+    <tr><th>Zdroj</th><th>Proč to stojí tokeny</th><th>Co s tím</th></tr>
+    <tr><td>Dlouhá konverzace</td><td>Celá historie se posílá s každou zprávou, i u jednověté otázky.</td><td>Nová konverzace na nové téma. Upravte původní zprávu místo posílání opravy.</td></tr>
+    <tr><td>PDF a obrázky</td><td>Každá stránka PDF se zpracuje dvakrát, jako text i jako obrázek. A to znovu při každém nahrání do nového chatu.</td><td>Nahrát jednou do Projektu. Tam se dokument uloží a Claude z něj načítá jen relevantní části.</td></tr>
+    <tr><td>Extended thinking a vysoký effort</td><td>Uvažování se účtuje jako psaný text. U jednoho požadavku může jít o desítky tisíc tokenů.</td><td>U běžných úloh uvažování vypnout nebo snížit effort.</td></tr>
+    <tr><td>Web search, Research, konektory</td><td>Popisy nástrojů a výsledky hledání se přidávají do kontextu každé odpovědi.</td><td>Zapínat jen v konverzaci, kde je opravdu potřebujete.</td></tr>
+    <tr><td>Cowork a samostatné úlohy</td><td>Když Claude pracuje samostatně ve více krocích, vytváří mezivýsledky, které nevidíte, ale platíte. Režim schvalování „Auto“ navíc každou akci kontroluje dalším modelem.</td><td>Jednoduché úlohy řešit v běžném chatu, ne v Cowork.</td></tr>
+    <tr><td>Návrat po pauze</td><td>Cache vydrží 1 hodinu (5 minut při čerpání placených kreditů). První zpráva po delší pauze zpracuje celou konverzaci znovu za plnou cenu.</td><td>Po delší pauze raději začít novou konverzaci a shrnout, kde jste skončili.</td></tr>
+    <tr><td>Opakované a paralelní úlohy</td><td>Každé automatické spuštění a každý souběžně pracující „pomocník“ (agent) posílá celý svůj kontext znovu.</td><td>Spouštět v čisté konverzaci, používat střídmě, hotové pomocníky ukončit.</td></tr>
+  </table></div>
+</section>
+
+<section>
+  <h2>Zásady podle prostředí</h2>
+
+  <div class="surface">
+    <header><h2>Claude.ai chat</h2><p class="hint">Běžné okno konverzace na webu nebo v aplikaci. Oficiální tipy z Help Center, doplněné návyky uživatelů.</p></header>
+    <ol class="rules">
+      <li><span class="rule">Nová konverzace na každé téma</span><span class="why">U chatu se 100 zprávami stojí každá další zpráva násobně víc než u chatu s pěti. Když se blížíte limitu, začněte znovu a stručně shrňte, co je potřeba vědět.</span><span class="src"><span class="tag">oficiální</span></span></li>
+      <li><span class="rule">Upravte původní zprávu místo posílání opravy</span><span class="why">Pod každou vaší zprávou je tlačítko pro úpravu. Upravená zpráva nahradí původní odpověď, zatímco nová zpráva s opravou se přidá navrch a obojí se pak čte znovu. Uživatelé to uvádějí jako nejúčinnější návyk.</span><span class="src"><span class="tag w">komunita</span></span></li>
+      <li><span class="rule">Opakovaně používané dokumenty dávejte do Projektů</span><span class="why">Obsah Projektu se uloží jednou a jeho opakované použití se nepočítá do limitu. Nahrání stejného PDF do pěti samostatných chatů znamená, že se zpracuje a zaplatí pětkrát.</span><span class="src"><span class="tag">oficiální</span></span></li>
+      <li><span class="rule">Dávkujte otázky, plánujte dopředu</span><span class="why">Více souvisejících úkolů v jedné zprávě. Text k úpravě pošlete celý, ne po částech. Před odesláním si zadání ještě přečtěte, ať nemusíte doplňovat.</span><span class="src"><span class="tag">oficiální</span></span></li>
+      <li><span class="rule">Vypněte web search, Research, konektory a extended thinking</span><span class="why">V nastavení „Search and tools“ (ikona vedle pole pro zprávu) je nechte vypnuté a zapínejte jen pro konkrétní chat. U běžných úloh snižte effort.</span><span class="src"><span class="tag">oficiální</span></span></li>
+      <li><span class="rule">Sonnet nebo Haiku jako výchozí, Opus na výjimky</span><span class="why">Většinu úloh zvládne menší model stejně dobře. Anthropic to doporučuje i jako výchozí nastavení pro celé organizace.</span><span class="src"><span class="tag">oficiální</span></span></li>
+      <li><span class="rule">Odkazujte, neopakujte</span><span class="why">„Jak jsem psala výše“ místo opětovného vložení textu. Claude umí sám prohledat vaše dřívější konverzace a má paměť, takže kontext nemusíte vysvětlovat znovu.</span><span class="src"><span class="tag">oficiální</span></span></li>
+      <li><span class="rule">Osobní nastavení a styl odpovědí zadejte jednou</span><span class="why">V nastavení profilu lze trvale zadat, jak má Claude odpovídat (délka, jazyk, tón). Nahradí to opakované instrukce v každém chatu.</span><span class="src"><span class="tag w">komunita</span></span></li>
+      <li><span class="rule">Nechte opravit jen část</span><span class="why">„Předělej jen sekci 3, zbytek nech“ místo „předělej celý text“. Šetří psané tokeny, které jsou nejdražší.</span><span class="src"><span class="tag w">komunita</span></span></li>
+      <li><span class="rule">Sledujte Settings → Usage</span><span class="why">Vidíte tam aktuální 5hodinové okno i týdenní limit. Náročné úlohy plánujte podle toho.</span><span class="src"><span class="tag">oficiální</span></span></li>
+    </ol>
+  </div>
+
+  <div class="surface">
+    <header><h2>Cowork</h2><p class="hint">Režim v desktopové aplikaci, kde Claude pracuje samostatně s vašimi soubory a aplikacemi (třídí dokumenty, vytváří tabulky, prochází složky). Spotřebuje výrazně víc než chat, protože pracuje v mnoha krocích, které nevidíte.</p></header>
+    <ol class="rules">
+      <li><span class="rule">Jednoduché úlohy dělejte v chatu</span><span class="why">Cowork zapínejte jen tam, kde je potřeba přístup k souborům nebo delší samostatná práce. Na dotaz, shrnutí nebo úpravu textu stačí chat.</span><span class="src"><span class="tag">oficiální</span></span></li>
+      <li><span class="rule">Sdružte související práci do jedné úlohy</span><span class="why">Každá nová úloha znovu načítá instrukce, dovednosti (skills) a konektory.</span><span class="src"><span class="tag">oficiální</span></span></li>
+      <li><span class="rule">Režim schvalování „Auto“ stojí víc</span><span class="why">V režimu Auto kontroluje každou akci další model, aby nebylo nutné ji ručně potvrzovat. Pokud vám nevadí potvrzovat akce sami, ostatní režimy jsou levnější.</span><span class="src"><span class="tag">oficiální</span></span></li>
+      <li><span class="rule">Nižší effort, méně konektorů, menší model</span><span class="why">Stejné páky jako v chatu: snížit effort, vypnout nepotřebné konektory, Sonnet místo Opus.</span><span class="src"><span class="tag">oficiální</span></span></li>
+      <li><span class="rule">Instrukce projektů stručné, staré soubory pryč</span><span class="why">Instrukce a soubory v projektu se načítají do každé konverzace daného projektu. Co tam neleží zbytečně, to neplatíte.</span><span class="src"><span class="tag">oficiální</span></span></li>
+    </ol>
+  </div>
+
+  <div class="surface">
+    <header><h2>Claude Code</h2><p class="hint">Nástroj pro práci s kódem a soubory přímo v počítači, ovládaný z příkazové řádky nebo z desktopové aplikace. Příkazy začínající lomítkem (např. <code>/clear</code>) se píší přímo do pole pro zprávu. Zdroje: oficiální dokumentace „Manage costs“ a „Best practices“, blog Anthropic a tipy Borise Chernyho, tvůrce Claude Code.</p></header>
+    <ol class="rules">
+      <li><span class="rule"><code>/clear</code> mezi nesouvisejícími úkoly</span><span class="why">Vymaže konverzaci a začne se s čistým kontextem. Nejúčinnější návyk, nic nestojí. Před vymazáním můžete konverzaci pojmenovat (<code>/rename</code>) a později se k ní vrátit (<code>/resume</code>).</span><span class="src"><span class="tag">oficiální</span></span></li>
+      <li><span class="rule"><code>/compact</code> včas a s instrukcí</span><span class="why">Nechá Clauda shrnout dosavadní konverzaci do krátkého souhrnu a pokračuje s ním místo s plnou historií. Dělejte to při zaplnění kontextu kolem 50–70 % a před pauzou. Za <code>/compact</code> se ale platí (Claude musí celou konverzaci přečíst a shrnutí napsat), takže na novém úkolu je levnější <code>/clear</code>. Dodatkem <code>/compact Focus on …</code> určíte, co má souhrn zachovat.</span><span class="src"><span class="tag">oficiální</span></span></li>
+      <li><span class="rule">Model a effort nastavte na začátku</span><span class="why">Změna modelu, effortu nebo rychlého režimu během práce zneplatní cache a celá konverzace se zpracuje znovu za plnou cenu.</span><span class="src"><span class="tag">oficiální</span></span></li>
+      <li><span class="rule">Sonnet jako výchozí, Haiku pro pomocníky</span><span class="why">Opus na návrh architektury a náročné uvažování. Poznámka: tým Claude Code sám používá Opus, protože ho musí méně korigovat, a v součtu je tak rychlejší. Záleží na stylu práce.</span><span class="src"><span class="tag">oficiální</span></span></li>
+      <li><span class="rule"><code>/effort</code> níž u běžné práce</span><span class="why">Úrovně low / medium / high / xhigh / max. Uvažování se účtuje jako psaný text. Nejvyšší úroveň zapínejte jen pro konkrétní těžký problém. Uživatelé udávají úsporu kolem 45 % při přechodu z high na medium bez ztráty kvality u běžných úloh.</span><span class="src"><span class="tag">oficiální</span></span></li>
+      <li><span class="rule">Soubory připojte přes <code>@</code>, a jen jednou</span><span class="why">Napsáním <code>@nazev-souboru</code> soubor rovnou přiložíte a Claude ho nemusí hledat a číst zvlášť. Soubor už pak v kontextu zůstává; opakované přiložení vytvoří duplikát.</span><span class="src"><span class="tag">oficiální</span></span></li>
+      <li><span class="rule">Konkrétní zadání místo „vylepši to“</span><span class="why">Vágní zadání vede k tomu, že Claude prochází stovky souborů, aby zjistil, co máte na mysli. Přesné zadání (který soubor, co přesně, jak poznat, že je hotovo) znamená minimum čtení.</span><span class="src"><span class="tag">oficiální</span></span></li>
+      <li><span class="rule">Dlouhé výstupy stranou</span><span class="why">Výstup každého spuštěného příkazu (testy, logy) zůstává v konverzaci natrvalo. Nechte Clauda použít tiché varianty příkazů, nebo delegovat hlučnou práci na pomocníka (subagent), který pracuje ve vlastním odděleném kontextu a vrátí jen shrnutí.</span><span class="src"><span class="tag">oficiální</span></span></li>
+      <li><span class="rule">Pomocníci na průzkum, ne na drobnosti</span><span class="why">Průzkum kódu nebo dokumentace v odděleném kontextu pomocníka udrží hlavní konverzaci čistou. Na malé úkoly ale pomocník přidá režii: má vlastní instrukce, nástroje a další kola komunikace.</span><span class="src"><span class="tag">oficiální</span></span></li>
+      <li><span class="rule">Soubor CLAUDE.md krátký, detaily do skills</span><span class="why">CLAUDE.md je soubor s trvalými pokyny, který se načte při každém startu. Držte ho pod 200 řádků. Postupy pro konkrétní situace patří do dovedností (skills), které se načtou až ve chvíli potřeby. U každého řádku se ptejte: vedlo by jeho smazání k chybám? Pokud ne, smažte ho.</span><span class="src"><span class="tag">oficiální</span></span></li>
+      <li><span class="rule">Vypněte nepoužívané konektory (MCP)</span><span class="why"><code>/mcp</code> ukáže zapojené konektory, <code>/context</code> ukáže, co zabírá místo v kontextu. Kde to jde, nechte Clauda použít běžné příkazové nástroje místo konektoru; ty do kontextu nepřidávají žádné popisy.</span><span class="src"><span class="tag">oficiální</span></span></li>
+      <li><span class="rule">Plánovací režim na složité, přímo na drobné</span><span class="why">Klávesou Shift+Tab přepnete do režimu, kde Claude nejdřív prozkoumá situaci a navrhne postup ke schválení. Zabrání drahému předělávání, když by se vydal špatným směrem. Pokud umíte změnu popsat jednou větou, plánování přeskočte.</span><span class="src"><span class="tag">oficiální</span></span></li>
+      <li><span class="rule">Zastavte ho brzy: Esc, <code>/rewind</code></span><span class="why">Klávesa Esc Clauda okamžitě zastaví. Po dvou neúspěšných opravách je konverzace plná slepých uliček; lepší je <code>/clear</code> a nové, přesnější zadání. <code>/rewind</code> vrátí konverzaci i soubory k dřívějšímu bodu bez přepisování historie, takže cache zůstane platná.</span><span class="src"><span class="tag">oficiální</span></span></li>
+      <li><span class="rule"><code>/btw</code> na vedlejší dotazy</span><span class="why">Otázka „mimochodem“ během práce. Odpověď se nezapíše do historie konverzace, takže kontext neroste. Uživatelé udávají až 50 % úsporu tam, kde často odbočují.</span><span class="src"><span class="tag">oficiální</span></span></li>
+      <li><span class="rule">Dejte Claudovi možnost si práci ověřit</span><span class="why">Testy, očekávaný výsledek, snímek obrazovky. Když si výsledek zkontroluje sám, ušetříte další kola oprav, a tím psané tokeny.</span><span class="src"><span class="tag">oficiální</span></span></li>
+      <li><span class="rule">Sledujte <code>/usage</code> a <code>/context</code></span><span class="why"><code>/usage</code> ukáže spotřebu a označí návyky, které tvoří přes 10 % (dlouhý kontext, ztráta cache), i s tipem, jak je omezit. <code>/context</code> ukáže, co právě sedí v kontextu a kolik zabírá.</span><span class="src"><span class="tag">oficiální</span></span></li>
+      <li><span class="rule">Automatické smyčky a týmy agentů střídmě</span><span class="why">Každé automatické spuštění posílá celý kontext znovu. Skupiny souběžně pracujících agentů spotřebují přibližně 7× více než běžná práce. Malé týmy, menší model, hotové agenty ukončit.</span><span class="src"><span class="tag">oficiální</span></span></li>
+    </ol>
+  </div>
+
+  <div class="note"><strong>Kde se komunita s Anthropic neshoduje.</strong> Články na X a blozích často tvrdí, že konektory (MCP) stojí 2–18 tisíc tokenů na každou zprávu. To platilo dřív; dnes Claude Code načítá popisy konektorů až ve chvíli, kdy je použije. Režie je menší, ale nenulová, takže vypínání nepoužívaných konektorů dál dává smysl. Podobně opatrně berte čísla typu „úspora 45 %“ nebo „50 %“: jde o zkušenost jednotlivých autorů, ne o měření Anthropic.</div>
+</section>
+
+<section>
+  <h2>Zdroje</h2>
+  <p class="sub">Oficiální dokumenty jsou uvedeny první. Komunitní zdroje doplňují návyky, čísla v nich berte orientačně.</p>
+  <ul class="sources">
+    <li><a href="https://code.claude.com/docs/en/costs">Claude Code Docs: Manage costs effectively</a></li>
+    <li><a href="https://code.claude.com/docs/en/best-practices">Claude Code Docs: Best practices</a></li>
+    <li><a href="https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions">Anthropic blog: Maximizing the value of your Claude Code sessions</a></li>
+    <li><a href="https://support.claude.com/en/articles/9797557-usage-limit-best-practices">Help Center: Usage limit best practices</a></li>
+    <li><a href="https://support.claude.com/en/articles/11647753-how-do-usage-and-length-limits-work">Help Center: How do usage and length limits work?</a></li>
+    <li><a href="https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork">Help Center: Get started with Claude Cowork</a></li>
+    <li><a href="https://support.claude.com/en/articles/14782391-claude-enterprise-consumption-guide">Help Center: Claude Enterprise consumption guide</a></li>
+    <li><a href="https://support.claude.com/en/articles/14554000-claude-code-power-user-tips">Help Center: Claude Code power user tips</a></li>
+    <li><a href="https://x.com/bcherny/status/2017742741636321619">Boris Cherny na X: tipy týmu Claude Code</a></li>
+    <li><a href="https://howborisusesclaudecode.com/">Sbírka tipů Borise Chernyho (136+)</a></li>
+    <li><a href="https://ruben.substack.com/p/how-to-stop-hitting-claude-usage">Ruben Hassid: How to stop hitting Claude usage limits</a></li>
+    <li><a href="https://aimaker.substack.com/p/claude-code-usage-limits-token-saving">AI Maker: What actually helps me stop hitting Claude Code usage limits</a></li>
+    <li><a href="https://www.analyticsvidhya.com/blog/2026/05/tips-for-claude-code-token-saving/">Analytics Vidhya: 23 tips for Claude Code token saving</a></li>
+    <li><a href="https://www.mindstudio.ai/blog/claude-code-btw-command-save-tokens">MindStudio: /btw command</a></li>
+    <li><a href="https://www.howtogeek.com/stop-wasting-claude-quota-on-long-conversations-use-projects/">How-To Geek: Use Projects to stop wasting quota</a></li>
+    <li><a href="https://www.kdnuggets.com/7-practical-ways-to-reduce-claude-code-token-usage">KDnuggets: 7 practical ways to reduce Claude Code token usage</a></li>
+  </ul>
+</section>
+</div>
+
+</body>
+</html>
