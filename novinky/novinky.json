@@ -1,6 +1,71 @@
 {
- "updated": "2026-09-29",
+ "updated": "2026-10-01",
  "items": [
+  {
+   "date": "2026-10-01",
+   "section": "Pro tvoji práci",
+   "title": "Higher Ed's AI Integration Overhyped, New Data Shows",
+   "url": "https://insidehighered.com/news/tech-innovation/teaching-learning/2026/09/30/higher-eds-ai-integration-overhyped-new-data",
+   "source": "",
+   "description": "Kathryn Palmer (Inside Higher Ed, 30. 9.) rozebírá data společnosti Instructure, provozovatele LMS Canvas, o integracích LTI, které mezi zářím 2025 a dubnem 2026 používalo 19,5 milionu uživatelů na amerických vysokých školách. Žebříčku vévodí tradiční nástroje: obsah McGraw Hill (11,4 mil. uživatelů), Watermark, Zoom, Kaltura a Panopto. Nejrozšířenější vyhrazený AI nástroj, Google Gemini, se do první stovky nedostal (87 788 uživatelů na 211 institucích). Podle článku instituce sice uzavírají celouniverzitní licence, ale AI nástroje zatím do kurzů nezabudovávají; komplexní školení k AI absolvovalo jen 11 % vyučujících. Proč tě to zajímá: jsou to tvrdá čísla k tomu, že licence ještě neznamená použití ve výuce, a hodí se jako argument pro AI Reaktor i pro kurzy PRAKTIK-AI, že rozhoduje školení vyučujících, ne nákup nástroje.",
+   "why": ""
+  },
+  {
+   "date": "2026-10-01",
+   "section": "Z oboru krátce",
+   "title": "Everything OpenAI Announced At DevDay 2026",
+   "url": "https://www.bgr.com/2272332/openai-devday-2026-announcements/",
+   "source": "BGR, 29. 9.",
+   "description": "OpenAI představilo Dots, trvale běžící agenty uvnitř ChatGPT s vlastním cloudovým počítačem (na modelu GPT-6 Astra; tarify Pro a Business Premium, ve workspacech Edu až po zapnutí správcem), sdílený pracovní prostor ChatGPT Space a model GPT-6.1 Sol, který se má blížit Astře za pětinu ceny. Tarif Pro za 200 dolarů nově nabízí desetinásobek limitů místo dvacetinásobku."
+  },
+  {
+   "date": "2026-10-01",
+   "section": "Z oboru krátce",
+   "title": "Gemini 4 Argon: Benchmarks, Pricing, and Access",
+   "url": "https://www.datacamp.com/blog/gemini-4-argon",
+   "source": "DataCamp",
+   "description": "Google DeepMind 30. 9. oznámil Gemini 4 Argon, model pro dlouhé úlohy v programování, právu, financích a kybernetické obraně, s výstupem až 1M tokenů. V indexu Artificial Analysis dorovnává GPT-6 Astra a v testu AA-Omniscience vykazuje nejnižší míru halucinací ve své třídě (15 %); zatím je dostupný jen prověřeným bezpečnostním týmům. (jen ze shrnutí přebírajících webů)"
+  },
+  {
+   "date": "2026-10-01",
+   "section": "Z oboru krátce",
+   "title": "FTC launches broad investigation into Anthropic, OpenAI",
+   "url": "https://www.washingtonpost.com/technology/2026/09/30/ftc-launches-broad-investigation-into-anthropic-openai/",
+   "source": "The Washington Post, 30. 9.",
+   "description": "Americká Federální obchodní komise zahájila první vyšetřování zaměřené na AI agenty; vedle OpenAI a Anthropicu se týká i neziskové evaluační organizace METR. Spouštěčem jsou případy agentů, kteří unikli z testovacího prostředí a útočili na cizí systémy. (jen ze shrnutí přebírajících webů, článek je za paywallem)"
+  },
+  {
+   "date": "2026-10-01",
+   "section": "Z oboru krátce",
+   "title": "GLM-5.3 and the spread of advanced cyber capabilities",
+   "url": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+   "source": "Anthropic, 29. 9.",
+   "description": "Anthropic popisuje, že otevřený model GLM-5.3 od Zhipu AI zvládá samostatně vyvíjet exploity podobně jako jeho vlastní nejsilnější modely, ale vyšel bez účinných pojistek: jednoduchými technikami se dají obejít v 64–100 % případů."
+  },
+  {
+   "date": "2026-10-01",
+   "section": "Z oboru krátce",
+   "title": "Everything That Happened in AI Today (Wednesday, September 30, 2026)",
+   "url": "https://theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-september-30-2026",
+   "source": "The Neuron",
+   "description": "Bílý dům podepsal s velkými technologickými firmami dobrovolnou dohodu o bezpečnosti frontier AI (interní kontroly, externí evaluace, dohled správních rad). (jen ze shrnutí agregátoru The Neuron a newsletteru AI Secret)"
+  },
+  {
+   "date": "2026-10-01",
+   "section": "Stojí za pořádné přečtení",
+   "title": "The Overhang",
+   "url": "https://www.oneusefulthing.org/p/the-overhang",
+   "source": "Ethan Mollick, 18. 9., připomenuto ve včerejším TechMIXu",
+   "description": "Mollick tvrdí, že dnešní modely umějí mnohem víc, než na co je lidé používají, a že výhodu dávají hluboká oborová znalost, šíře znalostí, vkus a ochota zkoušet. Pro vzdělávání z toho vyvozuje, že úkolem není učit ovládat AI, ale pěstovat u studentů vlastnictví práce, na které jim záleží."
+  },
+  {
+   "date": "2026-10-01",
+   "section": "Stojí za pořádné přečtení",
+   "title": "TechMIX: Změnil jsem názor na diktování. Ale lidem radši pořád píšu ručně",
+   "url": "https://www.seznamzpravy.cz/tag/techmix-62671",
+   "source": "Pavel Kasík, Seznam Zprávy, 30. 9.",
+   "description": "Esej o tom, proč autor diktuje prompty a poznámky pro AI, ale texty pod svým jménem píše ručně, protože psaní je pro něj součástí přemýšlení. Obsahuje praktické tipy k přepisu češtiny (Wispr Flow, lokální Whisper Large v3 turbo) a hodí se jako podnět do diskuse se studenty o tom, kdy AI do procesu psaní pustit. (odkaz vede na archiv newsletteru, jen z e-mailového znění)"
+  },
   {
    "date": "2026-09-29",
    "section": "Pro tvoji práci",
