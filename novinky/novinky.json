@@ -1,6 +1,89 @@
 {
- "updated": "2026-10-01",
+ "updated": "2026-10-02",
  "items": [
+  {
+   "date": "2026-10-02",
+   "section": "Pro tvoji práci",
+   "title": "Updated rate limit policy",
+   "url": "https://blog.arxiv.org/2026/10/01/updated-rate-limit-policy/",
+   "source": "",
+   "description": "Od 1. 10. 2026 smí každý autor na arXiv poslat nejvýše dva příspěvky za kalendářní měsíc a mít nejvýše tři aktivní (dosud nezveřejněné) příspěvky najednou, a to ve všech oborech. Příspěvky smazané před zveřejněním se nepočítají. arXiv to zdůvodňuje exponenciálním růstem (v září 2026 přes 40 tisíc příspěvků a 9 tisíc požadavků na podporu) a přívalem nekvalitních AI generovaných článků, které zahlcují dobrovolné moderátory. Proč tě to zajímá: je to první velký repozitář, který na AI generovanou produkci odpověděl plošným kvótováním, a hodí se jako konkrétní příklad pro diplomantky i pro výuku o tom, jak AI mění podmínky akademického publikování.",
+   "why": ""
+  },
+  {
+   "date": "2026-10-02",
+   "section": "Pro tvoji práci",
+   "title": "Can AI stand in for human survey takers? Not really",
+   "url": "https://www.pewresearch.org/data-labs/2026/09/30/can-ai-stand-in-for-human-survey-takers-not-really/",
+   "source": "",
+   "description": "Pew Research Center (30. 9.) nechal model Claude Opus 4.6 převzít persony skutečných členů panelu American Trends Panel a odpovědět na tři vlny průzkumu z roku 2026. U téměř 300 otázek se „syntetické“ odpovědi lišily od lidských v průměru o 12 procentních bodů a u zhruba 28 % otázek o víc než 15 bodů; nejhůř model odhadoval menšinové skupiny a aktuální dění. Model navíc stereotypizoval, přeceňoval znalosti veřejnosti a málo volil odpověď „nevím“. Závěr zní, že AI průzkumy nenahrazují pečlivé dotazování skutečných lidí. Proč tě to zajímá: když studentka v bakalářské či diplomové práci navrhne nahradit nebo doplnit respondenty AI personami, máš po ruce citovatelnou studii renomované instituce, proč to jako zdroj dat neobstojí.",
+   "why": ""
+  },
+  {
+   "date": "2026-10-02",
+   "section": "Pro tvoji práci",
+   "title": "Google Gemini ve školách (The Wall Street Journal)",
+   "url": "https://www.wsj.com/tech/ai/google-ai-gemini-education-schools-1ec0972a",
+   "source": "",
+   "description": "The Wall Street Journal (1. 10.) popisuje, jak Google prostřednictvím Chromebooků a Workspace for Education dostává Gemini do amerických škol a jak podle učitelů, studentů a výzkumníků roste obava ze závislosti a z dopadů na kritické myšlení a výsledky. Žáci v reportáži popisují, že po delším používání AI nástrojů na domácí úkoly mají potíže řešit úlohy samostatně. Přebírající weby uvádějí, že správci škol AI funkce v administraci nemohou vypnout, a odkazují na zářijová data PISA, podle nichž žáci, kteří AI používali k psaní konceptů textů, skórovali v průměru o 20 bodů níž. (jen ze shrnutí přebírajících webů, článek je za paywallem; údaj PISA se nepodařilo ověřit v původním zdroji) Proč tě to zajímá: rozdíl mezi AI jako pomocí a AI jako náhradou psaní je přesně téma pro budoucí učitele angličtiny, kteří budou nastavovat pravidla pro psaní ve svých třídách.",
+   "why": ""
+  },
+  {
+   "date": "2026-10-02",
+   "section": "Z oboru krátce",
+   "title": "StudentBench: AI and human tutoring yield equivalent GRE learning gains",
+   "url": "https://arxiv.org/abs/2609.28470",
+   "source": "arXiv, 23. 9., připomenuto 1. 10.",
+   "description": "Studie s 2 383 účastníky srovnala AI tutory, lidské tutory a skupinu bez doučování u úloh testu GRE; učební zisky AI a lidského doučování vyšly statisticky srovnatelné, nejlepší AI tutor při 918krát nižší ceně. Omezuje se na přípravu na standardizovaný test, bez sledování dlouhodobého zapamatování a přenosu."
+  },
+  {
+   "date": "2026-10-02",
+   "section": "Z oboru krátce",
+   "title": "How Much Is an AI Token Worth? Scaling Laws for Wild AI-Generated Web Text",
+   "url": "https://arxiv.org/abs/2609.40295",
+   "source": "arXiv, 30. 9.",
+   "description": "Autoři odhadují pomocí detektoru Pangram, že v srpnu 2026 bylo AI generováno zhruba 31 % tokenů na webu. Na 800 trénovaných modelech ukazují, že AI text pomáhá jen modelům s nedostatkem dat, pak začne škodit, zatímco nový lidský text pomáhá dál."
+  },
+  {
+   "date": "2026-10-02",
+   "section": "Z oboru krátce",
+   "title": "Senators Hawley, Murphy announce bipartisan AI Agent Accountability Act",
+   "url": "https://www.hawley.senate.gov/senators-hawley-murphy-announce-bipartisan-ai-agent-accountability-act/",
+   "source": "americký Senát",
+   "description": "Návrh zákona by zavedl občanskoprávní i trestní odpovědnost za některé případy, kdy AI agenti napadnou cizí systémy, pokud o tom provozovatel věděl nebo jednal lehkomyslně. Navazuje na včerejší zprávy o vyšetřování AI laboratoří americkou FTC. (jen ze shrnutí agregátoru The Neuron)"
+  },
+  {
+   "date": "2026-10-02",
+   "section": "Z oboru krátce",
+   "title": "Anthropic and Australian copyright",
+   "url": "https://www.theguardian.com/technology/2026/oct/02/anthropic-ai-opt-out-australia-copyright-abc-cannibalisation-of-news",
+   "source": "The Guardian, 2. 10.",
+   "description": "Anthropic sdělil australskému parlamentu, že přijímá odmítnutí široké výjimky pro vytěžování textů a dat, a žádá jen úzce vymezenou právní jistotu pro trénink s možností vyvázání (opt-out). (jen ze shrnutí agregátoru The Neuron)"
+  },
+  {
+   "date": "2026-10-02",
+   "section": "Z oboru krátce",
+   "title": "UGS lays out motion for student privacy amid AI controversy",
+   "url": "https://stanforddaily.com/2026/10/01/ugs-student-privacy-ai-controversy/",
+   "source": "The Stanford Daily, 1. 10.",
+   "description": "Univerzitní služby Stanfordu upravovaly fotografie studentů generativní AI; studentský senát navrhuje zveřejnit výsledky šetření a dát studentům zástupce v poradním výboru pro AI."
+  },
+  {
+   "date": "2026-10-02",
+   "section": "Stojí za pořádné přečtení",
+   "title": "Can AI stand in for human survey takers? Not really",
+   "url": "https://www.pewresearch.org/data-labs/2026/09/30/can-ai-stand-in-for-human-survey-takers-not-really/",
+   "source": "Pew Research Center",
+   "description": "Metodicky průhledná studie s konkrétními čísly po skupinách a tématech, vhodná jako povinná četba do semináře k metodologii závěrečných prací."
+  },
+  {
+   "date": "2026-10-02",
+   "section": "Stojí za pořádné přečtení",
+   "title": "Updated rate limit policy",
+   "url": "https://blog.arxiv.org/2026/10/01/updated-rate-limit-policy/",
+   "source": "arXiv blog",
+   "description": "Krátké a věcné zdůvodnění, proč repozitář s otevřeným přístupem musel omezit autory; dobrý podklad k debatě o kvalitě a množství v době AI."
+  },
   {
    "date": "2026-10-01",
    "section": "Pro tvoji práci",
