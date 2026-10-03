@@ -1,6 +1,31 @@
 {
- "updated": "2026-10-02",
+ "updated": "2026-10-03",
  "items": [
+  {
+   "date": "2026-10-03",
+   "section": "Pro tvoji práci",
+   "title": "AI Leads 2027 Educause Top 10",
+   "url": "https://campustechnology.com/articles/2026/10/01/ai-leads-2027-educause-top-10.aspx",
+   "source": "",
+   "description": "Asociace EDUCAUSE, která sdružuje IT a digitální oddělení vysokých škol, zveřejnila 1. 10. žebříček deseti klíčových témat na rok 2027 a AI se v něm poprvé dostala na první místo. Formulace je ovšem opatrná: nejde o „zavádění AI“, ale o „určení, kde AI přináší skutečnou hodnotu“. Mezi dalšími body jsou „návrh struktur pro odpovědné inovace s AI“ (4.) a „vycházet s AI vstříc jednotlivým skupinám“ (9.); na druhém místě je připravenost studentů na nestabilní svět. Podle autorů první místo „signalizuje spíš naléhavost než shodu“, tedy že instituce zatím nevědí, jaký dopad AI na ně skutečně má. (jen ze shrnutí Campus Technology, plný text zprávy nenačten) Proč tě to zajímá: otázka „kde AI přináší skutečnou hodnotu“ je přesně rámec, ve kterém lze s budoucími učiteli i na fakultní úrovni posuzovat konkrétní nástroje, místo plošného zákazu nebo plošného nadšení.",
+   "why": ""
+  },
+  {
+   "date": "2026-10-03",
+   "section": "Z oboru krátce",
+   "title": "Trump has promoted AI in education. His FCC may end school internet subsidies.",
+   "url": "https://ktvz.com/stacker-government-politics/2026/10/02/trump-has-promoted-ai-in-education-his-fcc-may-end-school-internet-subsidies/",
+   "source": "Stacker / KTVZ, 2. 10.",
+   "description": "Americká FCC přezkoumává federální dotace na internet pro školy (E-Rate); výsledkem může být jejich zrušení nebo podmínky typu omezení času u obrazovek, a to v době, kdy vláda AI ve školách sama propaguje. Americká záležitost, ale ilustruje rozpor mezi podporou AI a podporou infrastruktury, na které stojí."
+  },
+  {
+   "date": "2026-10-03",
+   "section": "Stojí za pořádné přečtení",
+   "title": "AI Leads 2027 Educause Top 10",
+   "url": "https://campustechnology.com/articles/2026/10/01/ai-leads-2027-educause-top-10.aspx",
+   "source": "Campus Technology",
+   "description": "Krátký vstup do celé zprávy EDUCAUSE; hodí se jako podklad pro diskusi o tom, jak by si priority měla stanovit i česká fakulta."
+  },
   {
    "date": "2026-10-02",
    "section": "Pro tvoji práci",
