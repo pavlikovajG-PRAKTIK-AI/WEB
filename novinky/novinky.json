@@ -1,6 +1,55 @@
 {
- "updated": "2026-10-03",
+ "updated": "2026-10-05",
  "items": [
+  {
+   "date": "2026-10-05",
+   "section": "Pro tvoji práci",
+   "title": "Higher Ed Is Still Muddling Through AI",
+   "url": "https://mindingthecampus.org/2026/10/05/higher-ed-is-still-muddling-through-ai/",
+   "source": "",
+   "description": "Mark McNeilly v komentáři pro Minding the Campus tvrdí, že univerzity téměř čtyři roky po nástupu ChatGPT stále berou AI hlavně jako taktickou otázku akademické integrity, místo aby ji řešily jako strategickou proměnu výuky, výzkumu i provozu. Opírá se o interní průzkum na UNC: 95 % vyučujících souhlasí, že studenti musí AI používat inteligentně a eticky, 90 % studentů AI používá, ale 58 % přiznává, že o ní ví málo, a zhruba polovina vnímá, že je škola od používání odrazuje. Doporučuje povinný kurz AI gramotnosti v rámci obecného základu, oborově specifickou „AI fluency\", školení zaměstnanců a etické zásady místo restriktivních pravidel.",
+   "why": "Proč tě to zajímá: čísla z UNC (vysoké používání, nízké porozumění, pocit odrazování) jsou přímo použitelný argument pro kurz Základy práce s AI pro studenty a pro debatu s ambasadory kateder."
+  },
+  {
+   "date": "2026-10-05",
+   "section": "Z oboru krátce",
+   "title": "AI Model Releases: October 2026 Tracker",
+   "url": "https://www.digitalapplied.com/blog/ai-model-releases-october-2026-tracker",
+   "source": "Digital Applied",
+   "description": "první říjnové dny bez frontier modelu: Microsoft vydal MAI-Transcribe-2-Streaming (přepis řeči v 60 jazycích s průběžnou detekcí jazyka) a MAI-Voice-2.1 (syntéza řeči, 23 jazyků), Bilibili otevřený překladový model Index-Translate-35B-A3B pro 150 jazyků, Cloudflare a Amazon malé otevřené „rozhodovací\" modely."
+  },
+  {
+   "date": "2026-10-05",
+   "section": "Z oboru krátce",
+   "title": "The Tests That Grade AI May Be Getting It Wrong",
+   "url": "https://hai.stanford.edu/news/the-tests-that-grade-ai-may-be-getting-it-wrong",
+   "source": "Stanford HAI, ve víkendovém newsletteru",
+   "description": "tým Sanmiho Koyejo prověřil 56 běžných benchmarků nástroji psychometrie (konvergentní a diskriminační validita) a zjistil rozsáhlé problémy; test zaujatosti BBQ podle nich měří spíš porozumění textu než předsudky."
+  },
+  {
+   "date": "2026-10-05",
+   "section": "Z oboru krátce",
+   "title": "Language Learning Reimagined: AI in Practice",
+   "url": "https://asef.org/news/language-learning-reimagined-ai-in-practice-02-oct-06-nov-2026/",
+   "source": "Asia-Europe Foundation",
+   "description": "online kurz přes Zoom pro učitele jazyků na středních školách z Asie a Evropy, běží každý pátek od 2. 10. do 6. 11. 2026 (návrh hodin s AI, kritické myšlení, peer review, sdílení sady materiálů)."
+  },
+  {
+   "date": "2026-10-05",
+   "section": "Stojí za pořádné přečtení",
+   "title": "The Tests That Grade AI May Be Getting It Wrong — validita, reliabilita a konstrukt jako v jazykovém testování, jen aplikované na hodnocení modelů; dobrý most mezi testologií a AI gramotností.",
+   "url": "",
+   "source": "",
+   "description": ""
+  },
+  {
+   "date": "2026-10-05",
+   "section": "Stojí za pořádné přečtení",
+   "title": "Higher Ed Is Still Muddling Through AI — krátký, polemický seznam opatření pro instituce, se kterým se dá v diskusi souhlasit i nesouhlasit.",
+   "url": "",
+   "source": "",
+   "description": ""
+  },
   {
    "date": "2026-10-03",
    "section": "Pro tvoji práci",
