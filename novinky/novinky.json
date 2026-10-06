@@ -1,6 +1,87 @@
 {
- "updated": "2026-10-05",
+ "updated": "2026-10-06",
  "items": [
+  {
+   "date": "2026-10-06",
+   "section": "Pro tvoji práci",
+   "title": "AI policy coming to University of Alaska as student misuse increases",
+   "url": "https://adn.com/alaska-news/education/2026/10/04/ai-policy-coming-to-university-of-alaska-as-student-misuse-increases",
+   "source": "",
+   "description": "Správní rada Aljašské univerzity připravuje první jednotnou politiku AI pro celý systém; dosud platila jen vágní klauzule o „neautorizovaných zařízeních\". Zpráva děkanátu pro studenty na UAA uvádí, že 119 ze 150 disciplinárních případů se týkalo AI a že plagiátorství vzrostlo o 73 %. Návrh klade důraz na „člověka ve smyčce\" a na začlenění AI do výuky napříč obory; část studentů ho považuje za málo přísný v otázkách soukromí.",
+   "why": "Proč tě to zajímá: číslo 119 ze 150 je citovatelný údaj do argumentace s diplomantkami, proč je transparentní prohlášení o využití AI lepší než snaha vše skrýt či zakázat."
+  },
+  {
+   "date": "2026-10-06",
+   "section": "Z oboru krátce",
+   "title": "Digital Omnibus k AI Actu (White & Case) — v platnosti od 27. 7. 2026; povinnosti pro vysoce rizikové systémy se odkládají na 2. 12. 2027 (u AI ve vyráběných produktech na 2. 8. 2028), systémy uvedené na trh před 2. 8. 2026 mají na označování a detekci AI obsahu do 2. 12. 2026. Přibyl zákaz „nudifikačních\" aplikací.",
+   "url": "",
+   "source": "",
+   "description": ""
+  },
+  {
+   "date": "2026-10-06",
+   "section": "Z oboru krátce",
+   "title": "Návrh pokynů k Článku 50 AI Actu (transparentnost, deepfaky) (Readwise, Tvé zvýraznění z Evropské komise) — pravidla platí od 2. 8. 2026; v e-mailu je poznámka ke konzultaci, která měla skončit už 3. 6., takže jde o znovu vyplavený starší záznam.",
+   "url": "",
+   "source": "",
+   "description": ""
+  },
+  {
+   "date": "2026-10-06",
+   "section": "Z oboru krátce",
+   "title": "OpenEuroLLM (AI Secret) — evropský projekt „suverénní AI\" doladil čínský Qwen3.5-9B na superpočítači LUMI do modelu pro 24 evropských jazyků (skóre z 59,3 % na 68,1 %); Mistral podle newsletteru dále nabízí GLM 5.2 od čínského Z.ai.",
+   "url": "",
+   "source": "",
+   "description": ""
+  },
+  {
+   "date": "2026-10-06",
+   "section": "Z oboru krátce",
+   "title": "Bílý dům zřídil „Super Intelligence Force\" (AI Secret) — pod vedením Jaye Claytona má koordinovat federální politiku AI; v americké administrativě se prosazuje označení SI místo AI.",
+   "url": "",
+   "source": "",
+   "description": ""
+  },
+  {
+   "date": "2026-10-06",
+   "section": "Z oboru krátce",
+   "title": "Odchod bezpečnostního šéfa OpenAI (AI Secret) — David Robinson, autor Preparedness Framework, rezignoval a v eseji pro The Atlantic kritizuje kulturu „nejdřív vydat, opravit později\"; jde o výklad newsletteru, ne o ověřenou zprávu.",
+   "url": "",
+   "source": "",
+   "description": ""
+  },
+  {
+   "date": "2026-10-06",
+   "section": "Z oboru krátce",
+   "title": "Import AI 475 (Jack Clark, přes Readwise) — roje agentů dokončí práci rychleji, ale s rostoucím počtem agentů klesá přínos; Google DeepMind vyvinul vodoznaky pro biologické materiály navržené AI.",
+   "url": "",
+   "source": "",
+   "description": ""
+  },
+  {
+   "date": "2026-10-06",
+   "section": "Z oboru krátce",
+   "title": "Apple omezuje macOS Full Disk Access (AI Secret) — po varování, že agenti AI mohou zpřístupnit soubory, poštu a historii prohlížení.",
+   "url": "",
+   "source": "",
+   "description": ""
+  },
+  {
+   "date": "2026-10-06",
+   "section": "Stojí za pořádné přečtení",
+   "title": "University of Alaska: AI policy — konkrétní data z disciplinární praxe, ne dojmy.",
+   "url": "",
+   "source": "",
+   "description": ""
+  },
+  {
+   "date": "2026-10-06",
+   "section": "Stojí za pořádné přečtení",
+   "title": "White & Case: Digital Omnibus deal — nové termíny AI Actu na jednom místě.",
+   "url": "",
+   "source": "",
+   "description": ""
+  },
   {
    "date": "2026-10-05",
    "section": "Pro tvoji práci",
