@@ -1,6 +1,38 @@
 {
- "updated": "2026-10-06",
+ "updated": "2026-10-08",
  "items": [
+  {
+   "date": "2026-10-08",
+   "section": "Z oboru krátce",
+   "title": "Mistral Large 4",
+   "url": "https://letsdatascience.com/news/mistral-debuts-large-4-open-weight-model-preview-cbf9e0b5",
+   "source": "Let's Data Science",
+   "description": "6. 10. otevřena veřejná preview přes API (multimodální MoE, ~1 bilion parametrů, 49 mld. aktivních). Open weights se očekávají koncem října (jako cíl se uvádí 27. 10.), licence zatím není jasná a nezávislé ověření výkonu chybí. Tvrdí se, že jde o nejschopnější model mimo USA a Čínu, ale ne o špičku; je trénovaný v evropských datacentrech."
+  },
+  {
+   "date": "2026-10-08",
+   "section": "Z oboru krátce",
+   "title": "ChatGPT začíná testovat vizuální reklamy (AI Secret, 7. 10.) — sponzorované obrázky u generování obrázků pro uživatele Free a Go; Plus, Pro a Enterprise zůstávají bez reklam. Newsletter upozorňuje, že OpenAI současně měří, které konverzace končí nákupem (jen z e-mailového shrnutí).",
+   "url": "",
+   "source": "",
+   "description": ""
+  },
+  {
+   "date": "2026-10-08",
+   "section": "Z oboru krátce",
+   "title": "Meta, Walmart, Shopify a Stripe vydaly Personal Agent Protocol (AI Secret, 7. 10.) — standard pro komunikaci AI agentů s obchodníky (jen z e-mailového shrnutí).",
+   "url": "",
+   "source": "",
+   "description": ""
+  },
+  {
+   "date": "2026-10-08",
+   "section": "Stojí za pořádné přečtení",
+   "title": "Teaching Claude Why (Anthropic)",
+   "url": "https://thenextweb.com/news/anthropic-claude-blackmail-internet-evil-ai-training",
+   "source": "",
+   "description": "shrnutí výzkumu o tom, jak Anthropic odstranil u Claude chování typu vydírání v testovacích scénářích; vysvětlení důvodů „proč je to špatně\" fungovalo lépe než pouhé ukázky správného chování. Do Readwise se dnes vrátilo jako zvýrazněný text; původní zpráva je z května 2026."
+  },
   {
    "date": "2026-10-06",
    "section": "Pro tvoji práci",
