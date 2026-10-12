@@ -1,6 +1,39 @@
 {
- "updated": "2026-10-08",
+ "updated": "2026-10-12",
  "items": [
+  {
+   "date": "2026-10-12",
+   "section": "Pro tvoji práci",
+   "title": "Common Sense risk report calls ChatGPT for Teens an \"unacceptable risk\"",
+   "url": "https://spectrumlocalnews.com/nys/buffalo/news/2026/10/08/common-sense-risk-report-calls-chatgpt-for-teens-and-unacceptable-risk-",
+   "source": "",
+   "description": "Youth AI Safety Institute při Common Sense Media otestoval ChatGPT for Teens na účtech registrovaných pro 13–17leté (přes 4 000 promptů, odpovědi posuzovali dětští psychiatři a pediatr) a označil službu za „unacceptable risk\" (nepřijatelné riziko). Podle zprávy nefungují spolehlivě upozornění rodičům v krizových situacích a ochrana proti tomu, aby chatbot dělal za žáky domácí úkoly. OpenAI výsledky zpochybňuje: podle něj většina testů mohla proběhnout dřív, než byla rodičovská kontrola plně aktivní. Institut odpovídá, že si spuštění funkcí před testováním s OpenAI ověřil. Článek vyšel 9. 10.",
+   "why": "Proč tě to zajímá: budoucí učitelé angličtiny se se „školní\" verzí ChatGPT setkají u svých žáků a tato zpráva je konkrétní doklad, že deklarované ochrany (včetně těch proti psaní úkolů) nelze brát jako samozřejmé."
+  },
+  {
+   "date": "2026-10-12",
+   "section": "Z oboru krátce",
+   "title": "Clef-omni",
+   "url": "https://blog.cloudflare.com/clef-faster-cheaper-multimodal/",
+   "source": "Cloudflare, 9. 10.",
+   "description": "otevřený model, který v jednom volání přijímá zvuk, video, obrázek i text a nevrací volný text, ale ohodnocené volby podle zadaného schématu (klasifikace, rozhodování v agentních úlohách). Postavený na Qwen3-Omni, váhy jsou na Hugging Face, licence na stránce uvedena není."
+  },
+  {
+   "date": "2026-10-12",
+   "section": "Z oboru krátce",
+   "title": "The Batch (DeepLearning.AI), vydání k DevDay a Gemini 4 (přes Readwise, 9. 10.) — kromě už zmíněných GPT-6.1 Sol a Gemini 4 Argon přináší model Black Forest Labs, který z videa a instrukcí generuje pohyby robota (podle shrnutí zatím u mnoha úloh selhává), a výzkum, podle něhož volba správných nástrojů zvyšuje počet úloh, které AI agenti dokončí (jen z e-mailového shrnutí).",
+   "url": "",
+   "source": "",
+   "description": ""
+  },
+  {
+   "date": "2026-10-12",
+   "section": "Stojí za pořádné přečtení",
+   "title": "AI-induced cultural stagnation is no longer speculation – it's already happening",
+   "url": "https://theconversation.com/ai-induced-cultural-stagnation-is-no-longer-speculation-its-already-happening-272488",
+   "source": "The Conversation, 22. 1. 2026; Ahmed Elgammal, Rutgers University",
+   "description": "vrátilo se jako zvýraznění v Readwise. Opírá se o studii, v níž se obrazový a textový model ve smyčce postupně sbíhaly k fádním, obecným výstupům; dobrý podklad pro diskusi o homogenizaci studentských textů psaných s AI."
+  },
   {
    "date": "2026-10-08",
    "section": "Z oboru krátce",
