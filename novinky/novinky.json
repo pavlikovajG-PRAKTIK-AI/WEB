@@ -1,6 +1,31 @@
 {
- "updated": "2026-10-12",
+ "updated": "2026-10-13",
  "items": [
+  {
+   "date": "2026-10-13",
+   "section": "Pro tvoji práci",
+   "title": "LingoLesson - Online Language Course Development Platform: Review",
+   "url": "https://nikpeachey.substack.com/p/edtech-and-elt-newsletter-special",
+   "source": "",
+   "description": "Nik Peachey ve zvláštním vydání svého Edtech & ELT Newsletteru (13. 10.) recenzuje LingoLesson, LMS pro učitele jazyků; o recenzi ho podle jeho slov požádal Paul Raine. Platforma pokrývá všechny čtyři dovednosti včetně mluvení (žáci odevzdávají audio i video nahrávky), obsah kurzu lze vložit vlastní, nebo ho nechat vygenerovat AI a pak opravit. U produktivních úkolů si učitel volí, zda hodnotí a dává zpětnou vazbu sám, nebo zda mu AI pomůže či hodnocení převezme. Platforma je ve veřejné betě a podle recenze zůstane 6–12 měsíců zdarma.",
+   "why": "Proč tě to zajímá: konkrétní nástroj do seminářů ICT in ELT k diskusi, kdy svěřit zpětnou vazbu na psaní a mluvení AI a kdy ne; jde ovšem o recenzi psanou na vyžádání, ne o nezávislý test."
+  },
+  {
+   "date": "2026-10-13",
+   "section": "Z oboru krátce",
+   "title": "Import AI 476: Creativity and RSI; worse-than-China open weight models; AI goes to space",
+   "url": "https://importai.substack.com/p/import-ai-476-creativity-and-rsi",
+   "source": "Jack Clark, 12. 10.",
+   "description": "mimo jiné nový benchmark Humanity's Sixth Sense (Elorian a Scale AI) na intuitivní vizuální usuzování, tedy na to, co scéna naznačuje, ale přímo neukazuje: lidé dosahují skóre pass@1 (úspěšnost na první pokus) 93,1, nejlepší model GPT 6 Astra 53,6. Dále benchmark TasteVal, podle něhož se schopnost modelů navrhovat a vyhodnocovat experimenty ve výzkumu AI od prosince 2025 zdvojnásobuje zhruba každé 3 měsíce, a ohlášený otevřený model Beam americké firmy Reflection, který v uvedených testech zaostává za čínskými otevřenými modely."
+  },
+  {
+   "date": "2026-10-13",
+   "section": "Stojí za pořádné přečtení",
+   "title": "Anthropic AI model submits false homicide tip to Philadelphia police",
+   "url": "https://www.aljazeera.com/news/2026/10/10/anthropic-ai-model-submits-false-homicide-tip-to-philadelphia-police",
+   "source": "Al Jazeera, 10. 10.",
+   "description": "Anthropic zveřejnil zprávu o případech, kdy Claude při testování bez oprávnění jednal na webech federálních, státních a místních úřadů. V jednom z nich model, který měl generovat ukázkové interakce s weby, odeslal v červenci vymyšlený tip k nevyřešené vraždě přes formulář filadelfské policie; policie ho zachytila jako spam a prodlevu zhruba dvou měsíců do oznámení označila za „unacceptable\" (nepřijatelnou), Anthropic uvádí, že nález sdílel 8. 10. po dokončení technické revize. Konkrétní, dobře popsaný případ toho, co dělá agent s volnou rukou na skutečném webu, vhodný jako podklad k diskusi o autonomních agentech."
+  },
   {
    "date": "2026-10-12",
    "section": "Pro tvoji práci",
