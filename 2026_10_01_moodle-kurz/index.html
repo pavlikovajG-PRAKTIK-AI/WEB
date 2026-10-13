@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moodle – zpracování kurzu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <p class="kicker">Pracovní list · PF UJEP · říjen 2026</p>
+    <h1>Moodle – zpracování kurzu</h1>
+    <p class="standfirst">Kurz v Moodlu se uloží jako jeden soubor zálohy (.mbz). AI soubor rozbalí, upraví obsah podle vašich pokynů a znovu ho zabalí. Upravenou zálohu obnovíte nejdřív v testovacím kurzu, a když je v pořádku, pak v ostrém kurzu.</p>
+    <p class="langs"><a href="en.html">English version</a> · <a href="2026_10_01_Moodle-zpracovani-kurzu.docx">verze k tisku (DOCX)</a></p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section>
+    <div class="band"><span class="no">Příprava</span><h2>Co budete potřebovat</h2><span class="meta">moodle.pf.ujep.cz · Moodle&nbsp;3.11</span></div>
+    <p class="lede">Moodle → záloha .mbz → AI upraví → nový .mbz → testovací kurz → kontrola → ostrý kurz</p>
+    <ul class="plain">
+      <li>Roli učitele s právem upravovat kurz. Když v nabídce kurzu (ozubené kolečko) nevidíte položky Záloha a Obnovit, obraťte se na správce Moodlu.</li>
+      <li>Prázdný testovací kurz, ve kterém jste učitelem.</li>
+      <li>AI nástroj, který umí pracovat se soubory a spouštět kód. Postup byl vyzkoušen s nástrojem Claude Code v desktopové aplikaci Claude.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="band"><span class="no">Základ</span><h2>Postup</h2></div>
+
+    <ol class="steps">
+      <li>
+        <h3>Záloha kurzu</h3>
+        <p>V kurzu klikněte na ozubené kolečko → <b>Záloha</b>. V prvním kroku zrušte zaškrtnutí <b>Zahrnout zapsané uživatele</b>. Pokračujte tlačítkem <b>Další</b> až k <b>Provést zálohu</b>, pak <b>Pokračovat</b>. Soubor .mbz stáhněte odkazem <b>Stáhnout</b>.</p>
+        <p>Záloha bez uživatelů neobsahuje údaje studentů, a ty se tak do AI nedostanou.</p>
+      </li>
+
+      <li>
+        <h3>Zadání pro AI</h3>
+        <p>Nahrajte soubor .mbz do AI nástroje a začněte přehledem, ne úpravami:</p>
+        <div class="prompt">Projdi tuto zálohu kurzu z Moodlu. Vypiš sekce a stránky a navrhni, co aktualizovat. Zatím nic neměň.</div>
+        <p>Z návrhů vyberte, co chcete, a zadejte to:</p>
+        <div class="prompt">Uprav stránky v sekcích 2–4 podle bodů 1, 3 a 5. Nic nemaž bez mého souhlasu.</div>
+        <p>S AI lze například opravit a aktualizovat texty, sjednotit vzhled stránek, zkontrolovat odkazy, přidat nové stránky, přečíslovat sekce. Pro nový typ činnosti (úkol, workshop, H5P) potřebuje AI vzor z vaší skutečné zálohy.</p>
+      </li>
+
+      <li>
+        <h3>AI zálohu zabalí a zkontroluje</h3>
+        <p>Soubor .mbz je komprimovaný archiv se zvláštními pravidly (není to běžný ZIP). Do zadání proto napište:</p>
+        <div class="prompt">Zabal výsledek jako zálohu Moodlu .mbz: tar.gz ve formátu ustar bez hlaviček PAX, s nově vytvořeným souborem .ARCHIVE_INDEX na prvním místě. Soubory XML zapisuj s hlavičkou &lt;?xml version="1.0" encoding="UTF-8"?&gt; a konci řádků LF. Zálohu ověř a drž ji pod 100&nbsp;MB.</div>
+        <p>100&nbsp;MB je limit pro nahrání souboru na moodle.pf.ujep.cz.</p>
+      </li>
+
+      <li>
+        <h3>Obnova do testovacího kurzu</h3>
+        <p>V testovacím kurzu: ozubené kolečko → <b>Obnovit</b> → v části <b>Importovat soubor zálohy</b> vyberte nový soubor → <b>Obnovit</b>. V části <b>Obnovit do tohoto kurzu</b> zvolte <b>Odstranit obsah tohoto kurzu a poté obnovit</b> a klikněte na tlačítko pod touto částí. Dál pokračujte tlačítky <b>Další</b> až k <b>Provést obnovu</b>, pak <b>Pokračovat</b>.</p>
+        <p>Kurz projděte: pořadí sekcí, stránky, obrázky, odkazy. Věcnou správnost obsahu kontrolujete vy, protože AI se může mýlit.</p>
+      </li>
+
+      <li>
+        <h3>Obnova do ostrého kurzu</h3>
+        <p>Postupujte jako v kroku 4. V nastavení obnovy ale zkontrolujte tyto volby:</p>
+        <ul class="plain">
+          <li><b>Zachovat aktuální role a zápisy:</b> Ano (při volbě Ne se všichni studenti odhlásí)</li>
+          <li><b>Zachovat aktuální skupiny …:</b> Ano</li>
+          <li><b>Přepsat konfiguraci kurzu:</b> Ne</li>
+        </ul>
+        <div class="warn">
+          <p><b>Pozor:</b> Volba <i>Odstranit obsah tohoto kurzu</i> smaže i práci studentů v činnostech (příspěvky ve fórech, pokusy v testech, odevzdané úkoly, známky, plnění). Pokud kurz už práci studentů obsahuje, obnovu nedělejte a požádejte AI o hotové HTML stránky, které vložíte do Moodlu ručně (tlačítko HTML v editoru).</p>
+        </div>
+      </li>
+
+      <li>
+        <h3>Když obnova selže</h3>
+        <p>Klikněte na <b>Více informací o této chybě</b> a celý text vložte do AI. Hlášení „progress() value out of range“ znamená chybně zabalený archiv. Hlášení „Neznámý formát zálohy“ znamená chybu v souborech XML (hlavička nebo konce řádků). V obou případech AI zálohu opraví a zabalí znovu. Vždy nahrávejte nejnovější soubor a starší zálohy se stejným názvem na stránce Obnovit smažte, aby se nezaměnily.</p>
+      </li>
+    </ol>
+  </section>
+
+  <div class="warn">
+    <p><b>Shrnutí.</b> Zálohujte bez uživatelů. Upravenou zálohu obnovte nejdřív v testovacím kurzu a obsah před zveřejněním zkontrolujte sami.</p>
+  </div>
+
+  <footer>
+    <p>Mgr. Jana Pavlíková, M.A., Ph.D. · Katedra anglistiky · PF UJEP · jana.pavlikova@ujep.cz</p>
+  </footer>
+
+</div>
+</body>
+</html>

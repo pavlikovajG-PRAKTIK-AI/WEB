@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moodle – revising a course</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <p class="kicker">Worksheet · Faculty of Education, UJEP · October 2026</p>
+    <h1>Moodle – revising a course</h1>
+    <p class="standfirst">A Moodle course is saved as a single backup file (.mbz). The AI tool unpacks the file, edits the content as you instruct and packs it again. You first restore the edited backup in a test course and then, if it is in order, in the live course.</p>
+    <p class="langs"><a href="./">Česká verze</a> · <a href="2026_10_01_Moodle-course-revision.docx">printable version (DOCX)</a></p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section>
+    <div class="band"><span class="no">Preparation</span><h2>What you need</h2><span class="meta">moodle.pf.ujep.cz · Moodle&nbsp;3.11</span></div>
+    <p class="lede">Moodle → .mbz backup → AI edits → new .mbz → test course → check → live course</p>
+    <ul class="plain">
+      <li>A teacher role with editing rights in the course. If you cannot see Backup and Restore in the course menu (the cog icon), contact your Moodle administrator.</li>
+      <li>An empty test course in which you are a teacher.</li>
+      <li>An AI tool that can work with files and run code. The procedure has been tested with Claude Code in the Claude desktop app.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="band"><span class="no">Basics</span><h2>Procedure</h2></div>
+
+    <ol class="steps">
+      <li>
+        <h3>Back up the course</h3>
+        <p>In the course, click the cog icon → <b>Backup</b>. In the first step, untick <b>Include enrolled users</b>. Click <b>Next</b> until you reach <b>Perform backup</b>, then <b>Continue</b>. Download the .mbz file using the <b>Download</b> link.</p>
+        <p>A backup without users contains no student data, so none of it reaches the AI tool.</p>
+      </li>
+
+      <li>
+        <h3>Instruct the AI tool</h3>
+        <p>Upload the .mbz file to the AI tool and start with an overview, not with changes:</p>
+        <div class="prompt">Go through this Moodle course backup. List the sections and pages and suggest what to update. Do not change anything yet.</div>
+        <p>Choose the suggestions you want and ask for them:</p>
+        <div class="prompt">Edit the pages in sections 2–4 according to points 1, 3 and 5. Do not delete anything without my consent.</div>
+        <p>With AI you can, for example, correct and update texts, give pages a consistent look, check links, add new pages and renumber sections. For a new type of activity (assignment, workshop, H5P), the AI tool needs an example from one of your actual backups.</p>
+      </li>
+
+      <li>
+        <h3>The AI tool packs and checks the backup</h3>
+        <p>An .mbz file is a compressed archive with special rules (it is not an ordinary ZIP file). So add this to your instructions:</p>
+        <div class="prompt">Pack the result as a Moodle backup (.mbz): tar.gz in ustar format without PAX headers, with a newly generated .ARCHIVE_INDEX file as the first entry. Write the XML files with the header &lt;?xml version="1.0" encoding="UTF-8"?&gt; and LF line endings. Validate the backup and keep it under 100&nbsp;MB.</div>
+        <p>100&nbsp;MB is the upload limit on moodle.pf.ujep.cz.</p>
+      </li>
+
+      <li>
+        <h3>Restore into the test course</h3>
+        <p>In the test course: cog icon → <b>Restore</b> → under <b>Import a backup file</b>, choose the new file → <b>Restore</b>. Under <b>Restore into this course</b>, select <b>Delete the contents of this course and then restore</b> and click the button below that section. Then click <b>Next</b> until you reach <b>Perform restore</b>, then <b>Continue</b>.</p>
+        <p>Go through the course: section order, pages, images, links. You check the content for factual accuracy yourself, as AI can make mistakes.</p>
+      </li>
+
+      <li>
+        <h3>Restore into the live course</h3>
+        <p>Proceed as in step 4, but check these restore settings:</p>
+        <ul class="plain">
+          <li><b>Keep current roles and enrolments:</b> Yes (choosing No unenrols all students)</li>
+          <li><b>Keep current groups and groupings:</b> Yes</li>
+          <li><b>Overwrite course configuration:</b> No</li>
+        </ul>
+        <div class="warn">
+          <p><b>Caution:</b> The option <i>Delete the contents of this course</i> also deletes student work in activities (forum posts, quiz attempts, assignment submissions, grades, activity completion). If the course already contains student work, do not restore the backup; instead, ask the AI tool for ready-made HTML pages and paste them into Moodle yourself (the HTML button in the editor).</p>
+        </div>
+      </li>
+
+      <li>
+        <h3>If the restore fails</h3>
+        <p>Click <b>More information about this error</b> and paste the full text into the AI tool. The message “progress() value out of range” means the archive was packed incorrectly. The message “Unknown backup format” means an error in the XML files (header or line endings). In both cases, the AI tool corrects the backup and packs it again. Always upload the newest file, and delete older backups with the same name on the Restore page so that they are not mixed up.</p>
+      </li>
+    </ol>
+  </section>
+
+  <div class="warn">
+    <p><b>Summary.</b> Back up without users. Restore the edited backup in a test course first, and check the content yourself before publishing it.</p>
+  </div>
+
+  <footer>
+    <p>Mgr. Jana Pavlíková, M.A., Ph.D. · Department of English · Faculty of Education, UJEP · jana.pavlikova@ujep.cz</p>
+  </footer>
+
+</div>
+</body>
+</html>
