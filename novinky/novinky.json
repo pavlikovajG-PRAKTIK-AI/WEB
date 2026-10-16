@@ -1,6 +1,31 @@
 {
- "updated": "2026-10-15",
+ "updated": "2026-10-16",
  "items": [
+  {
+   "date": "2026-10-16",
+   "section": "Pro tvoji práci",
+   "title": "The 2026 Maintainers Summit",
+   "url": "https://lwn.net/SubscriberLink/1099594/be20382b54a9b4cd/",
+   "source": "",
+   "description": "Na setkání správců jádra Linuxu 8. 10. v Praze se účastníci shodli, že zruší požadavek označovat opravy vytvořené s pomocí jazykových modelů značkou „Assisted-by\" v popisu změny. Podle LWN nesla značku v cyklu 7.3 zhruba desetina z 18 533 změn, mnoho přispěvatelů ji ale vynechávalo a jen málo správců ji kontrolovalo, takže podle Jonathana Corbeta nedávala „no useful signal\" (žádnou užitečnou informaci). Linus Torvalds podle zápisu soudil, že se část přispěvatelů za použití nástrojů styděla a povinnost mohla lidi od nástrojů odrazovat. Správci přesto chtějí vědět, jak oprava vznikla (zda do ní vstoupil člověk, případně jaký model a v jaké fázi), a navrhují uvádět to v průvodním dopise k opravě, ne v trvalém záznamu změn. Sasha Levin 9. 10. poslal úpravu dokumentace, která požadavek odstraňuje; podle Phoronixu jsou názory v diskusi smíšené, změna ale pravděpodobně projde.",
+   "why": "Proč tě to zajímá: je to dobře zdokumentovaný případ, kdy povinné prohlášení o použití AI bez kontroly přestalo cokoli vypovídat a nahradil ho popis postupu, což se hodí do debaty o AI deklaracích ve studentských a kvalifikačních pracích."
+  },
+  {
+   "date": "2026-10-16",
+   "section": "Z oboru krátce",
+   "title": "Eight States Sue OpenAI, Alleging It Misled the Public About ChatGPT's Safety",
+   "url": "https://www.justsecurity.org/160981/eight-states-sue-openai-chatgpt-safety/",
+   "source": "Just Security, 15. 10.",
+   "description": "generální prokurátoři Arizony, Arkansasu, Idaha, Iowy, Kansasu, Montany, Nebrasky a Západní Virginie 14. 10. podali každý u soudu svého státu koordinované žaloby. Tvrdí, že OpenAI porušila zákony na ochranu spotřebitele, když ChatGPT propagovala jako bezpečný a zamlčela jeho rizika. Podle shrnutí v newsletteru AI Secret žaloby tvrdí, že ChatGPT posiluje bludy a navádí uživatele včetně dospívajících k ubližování sobě nebo druhým. Jako první stát žalovala OpenAI Florida už v červnu 2026."
+  },
+  {
+   "date": "2026-10-16",
+   "section": "Stojí za pořádné přečtení",
+   "title": "The 2026 Maintainers Summit",
+   "url": "https://lwn.net/SubscriberLink/1099594/be20382b54a9b4cd/",
+   "source": "LWN",
+   "description": "věcný zápis s argumenty pro i proti povinnému označování AI pomoci, včetně menšinového názoru, že značka užitečná je."
+  },
   {
    "date": "2026-10-15",
    "section": "Pro tvoji práci",
