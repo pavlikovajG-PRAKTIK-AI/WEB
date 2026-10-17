@@ -1,6 +1,30 @@
 {
- "updated": "2026-10-16",
+ "updated": "2026-10-17",
  "items": [
+  {
+   "date": "2026-10-17",
+   "section": "Z oboru krátce",
+   "title": "Meta releases 816B-parameter Muse Spark Open for coding and agent work",
+   "url": "https://siliconangle.com/?p=850737",
+   "source": "SiliconANGLE, 15. 10.",
+   "description": "Meta zveřejnila váhy modelu Muse Spark Open (816 mld. parametrů, z toho 42 mld. aktivních na token, kontext až 1 milion tokenů), určeného hlavně pro programování a dlouhé agentní úlohy. Váhy jsou na Hugging Face a v katalozích AWS, Google a Microsoft. Licence Muse Model License není klasická otevřená licence: vyžaduje označení „Built with Muse Spark Open“, zakazuje vojenské použití a u poskytovatelů hostované služby s obratem nad 20 mil. USD za 12 měsíců požaduje zvláštní smlouvu. Podle newsletteru Rohan's Bytes je vydání vyladěné pro Apple MLX a model lze spustit na dvou propojených počítačích Mac Studio."
+  },
+  {
+   "date": "2026-10-17",
+   "section": "Z oboru krátce",
+   "title": "Claude Haiku 5.5, Mistral Large 4, and Local Models for Mac and Windows",
+   "url": "https://www.deeplearning.ai/the-batch/issue-375",
+   "source": "The Batch, 16. 10.",
+   "description": "týdenní souhrn DeepLearning.AI. Popisuje Claude Haiku 5.5 (vydán 7. 10.), nejrychlejší a nejlevnější model Anthropicu: vstup text a obrázky do 1 milionu tokenů, nastavitelná míra uvažování, používání nástrojů a ovládání počítače. Dále shrnuje nové počítače Apple a Microsoftu určené pro lokální provoz AI modelů."
+  },
+  {
+   "date": "2026-10-17",
+   "section": "Stojí za pořádné přečtení",
+   "title": "Úvodní dopis Andrewa Nga v The Batch č. 375",
+   "url": "https://www.deeplearning.ai/the-batch/issue-375",
+   "source": "",
+   "description": "Ng vysvětluje, proč jazykové modely rychle zlepšují výkon v úlohách, které lze automaticky ověřit (programování, matematika), a výrazně pomaleji v úlohách vyžadujících úsudek, a proč snadné měření prvních z nich vede k přeceňování celkového pokroku. Vzdělávání ani psaní dopis přímo nezmiňuje."
+  },
   {
    "date": "2026-10-16",
    "section": "Pro tvoji práci",
