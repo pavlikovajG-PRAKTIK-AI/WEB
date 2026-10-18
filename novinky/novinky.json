@@ -1,6 +1,22 @@
 {
- "updated": "2026-10-17",
+ "updated": "2026-10-18",
  "items": [
+  {
+   "date": "2026-10-18",
+   "section": "Z oboru krátce",
+   "title": "How employment is changing at Anthropic",
+   "url": "https://www.anthropic.com/research/employment-at-anthropic",
+   "source": "Anthropic, 16. 10., v předchozím přehledu nebyla",
+   "description": "zpráva čtyř výzkumníků firmy (N. Wilmers, R. Catipon, M. Massenkoff, P. McCrory) o změnách zaměstnanosti uvnitř Anthropicu. Podíl juniorů mezi technickými zaměstnanci klesl od začátku roku 2025 z 21 % na 14 %, mezi nově přijatými technickými pracovníky z 27 % na 9 %. V hodnocení uchazečů při pohovorech roste důraz na samostatnost a úsudek, zmínek o oborové odbornosti ubývá. Autoři upozorňují, že Anthropic je neobvyklý případ a jeho praxi nelze přenášet na celou ekonomiku."
+  },
+  {
+   "date": "2026-10-18",
+   "section": "Stojí za pořádné přečtení",
+   "title": "How employment is changing at Anthropic",
+   "url": "https://www.anthropic.com/research/employment-at-anthropic",
+   "source": "",
+   "description": "vedle čísel o náboru zpráva otevírá otázku, jak se rozvíjí odbornost, když se zaměstnanci vzdalují od praktické práce, na které své dovednosti původně získali. Formálním vzděláváním se nezabývá."
+  },
   {
    "date": "2026-10-17",
    "section": "Z oboru krátce",
