@@ -1,6 +1,31 @@
 {
- "updated": "2026-10-18",
+ "updated": "2026-10-19",
  "items": [
+  {
+   "date": "2026-10-19",
+   "section": "Pro tvoji práci",
+   "title": "Humans and AI Engage in Meaningful Collaborations",
+   "url": "https://hai.stanford.edu/news/humans-and-ai-engage-in-meaningful-collaborations",
+   "source": "",
+   "description": "Stanford HAI (článek z 12. 10., v newsletteru HAI 18. 10.) shrnuje studii týmu Diyi Yang. Tým s pomocí analytického nástroje Anthropicu Insights rozebral zhruba čtvrt milionu anonymizovaných konverzací s Claudem. Podle článku byla studie přijata do časopisu Nature Human Behaviour. Hodnocení „consequential“ (se závažnými důsledky) nebo vyšší dostalo 56 % konverzací. Ve dvou třetinách interakcí uživatelé žádali, aby jim AI něco vysvětlila nebo je něco naučila, ne jen aby vytvořila obsah. Zhruba polovina konverzací obsahovala tření (nesoulad mezi uživatelem a modelem). Autoři ho popisují jako tvůrčí napětí, které může vést k upřesnění, vylepšení a učení, konkrétní míru učení ale článek neuvádí. Autoři varují před rozevírajícími se nůžkami mezi lidmi, kteří AI používají k rozvoji dovedností, a těmi, kteří jí nahrazují vlastní úsudek, a doporučují zvyšovat AI gramotnost veřejnosti.",
+   "why": "Proč tě to zajímá: rozlišení mezi AI, která vysvětluje a učí, a AI, která nahrazuje úsudek, je citovatelný empirický podklad pro výuku AI gramotnosti budoucích učitelů a pro rozhovory s diplomantkami o přiměřeném používání AI."
+  },
+  {
+   "date": "2026-10-19",
+   "section": "Z oboru krátce",
+   "title": "Mimo položky zachycené v přehledech z 16.–18. 10. (žaloby osmi států na OpenAI, Muse Spark Open od Mety, Claude Haiku 5.5) nepřinesly zdroje za víkend nic nového z modelů, regulace ani nástrojů pro výuku.",
+   "url": "",
+   "source": "",
+   "description": ""
+  },
+  {
+   "date": "2026-10-19",
+   "section": "Stojí za pořádné přečtení",
+   "title": "Humans and AI Engage in Meaningful Collaborations",
+   "url": "https://hai.stanford.edu/news/humans-and-ai-engage-in-meaningful-collaborations",
+   "source": "Stanford HAI",
+   "description": "krátký článek s citacemi autorů, odkud vede cesta k samotné studii; vhodný jako výchozí bod před čtením plného textu."
+  },
   {
    "date": "2026-10-18",
    "section": "Z oboru krátce",
