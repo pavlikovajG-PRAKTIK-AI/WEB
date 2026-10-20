@@ -1,6 +1,65 @@
 {
- "updated": "2026-10-19",
+ "updated": "2026-10-20",
  "items": [
+  {
+   "date": "2026-10-20",
+   "section": "Pro tvoji práci",
+   "title": "The 50-Year \"Overnight\" AI Revolution: What a Half-Century of Research Actually Tells Us",
+   "url": "https://ammaramerhbi.substack.com/p/the-50-year-overnight-ai-revolution",
+   "source": "",
+   "description": "Ammar A. Merhbi (Substack, 6. 10., odkaz v newsletteru Nika Peacheyho z 20. 10.) shrnuje retrospektivu padesáti let časopisu Computers & Education. Podle textu zažila AI ve výzkumu vzdělávání velký rozmach už v letech 1976–1989 (expertní systémy, inteligentní tutorské systémy) a dnešní prudký nárůst publikací o AI odráží „surge in research attention, not necessarily demonstrated educational effectiveness“. Autor upozorňuje, že zásah může zvýšit průměrné výsledky testů a zároveň oslabit přenos do situací bez AI, a že studenti mají umět doporučení AI vysvětlit, zpochybnit a odmítnout. Autory ani metodu samotné retrospektivy text blíže neuvádí.",
+   "why": "Proč tě to zajímá: pro diplomantky je to připomínka, že množství publikací o AI ve výuce není doklad účinnosti, a citovat je třeba přímo původní retrospektivu v Computers & Education, ne tento blogový článek."
+  },
+  {
+   "date": "2026-10-20",
+   "section": "Pro tvoji práci",
+   "title": "Edtech & ELT Newsletter October 2026",
+   "url": "https://nikpeachey.substack.com/p/edtech-and-elt-newsletter-october",
+   "source": "",
+   "description": "Říjnové vydání newsletteru Nika Peacheyho (20. 10.) přináší několik nástrojů pro učitele angličtiny. Fill in the Blank Generator je bezplatné rozšíření pro desktopový Chrome: z webové stránky nebo fotografie stránky učebnice vytvoří doplňovačku, v níž učitel sám kliká na slova k vynechání (třeba jen slovesa v minulém čase), s klíčem v PDF, Wordu nebo Google Docs; texty se podle popisu neukládají. Glite je nová aplikace pro středně pokročilé a pokročilé, jejíž AI podle newsletteru vychází z dat rozsáhlého testu slovní zásoby a doporučuje, co se učit dál. Dále AI Kid Voice Generator na dětské hlasy pro poslechy mladších žáků (10 kreditů denně zdarma). (jen z e-mailového shrnutí)",
+   "why": "Proč tě to zajímá: doplňovačka s ručním výběrem mezer cílí na konkrétní jazykový jev, a hodí se proto jako ukázka v didaktice pro studenty, kteří připravují vlastní materiály."
+  },
+  {
+   "date": "2026-10-20",
+   "section": "Pro tvoji práci",
+   "title": "Use of AI and ICT to support inclusion of children with autism, ADHD, and Learning Disabilities",
+   "url": "https://iite.unesco.org/wp-content/uploads/2026/08/report_10-sept-2026.pdf",
+   "source": "",
+   "description": "Zpráva UNESCO IITE (podle názvu souboru ze září 2026, odkaz v newsletteru Nika Peacheyho z 20. 10.) podle citovaného úryvku vychází z mezinárodních případových studií a názorů odborníků. Uvádí příklady praxe, například výběr nástroje samotnými žáky, sociální učení s pomocí robotiky nebo alternativní a augmentativní komunikaci s podporou spolužáků, a pojmenovává systémové bariéry: roztříštěnou politiku, omezené kapacity učitelů a nerovný přístup. (jen z e-mailového shrnutí)",
+   "why": "Proč tě to zajímá: jde o aktuální mezinárodní zdroj k AI a inkluzi, který mohou citovat studenti a diplomantky píšící o žácích se speciálními vzdělávacími potřebami ve výuce angličtiny."
+  },
+  {
+   "date": "2026-10-20",
+   "section": "Z oboru krátce",
+   "title": "How ChatGPT Targets Ads To You Based On Your Prompts, Phone Number, and Email",
+   "url": "https://404media.co/how-chatgpt-targets-ads-to-you-based-on-your-prompts-phone-number-and-email",
+   "source": "404 Media, 15. 10., v newsletteru AI Secret 19. 10.",
+   "description": "redakce si v ChatGPT zaplatila reklamu s textem, že ChatGPT není soukromý, a nechala ji cílit na konverzace o soukromí. Inzerenti mohou podle zjištění nahrát e-maily a telefonní čísla zákazníků a oslovit odpovídající uživatele; vypnutí personalizace podle článku nebrání reklamám vybraným podle aktuální konverzace. OpenAI uvádí, že inzerenti nevidí konverzace ani identitu spárovaných uživatelů. (článek se nepodařilo otevřít přímo, shrnutí podle e-mailu a sekundárních zpráv)"
+  },
+  {
+   "date": "2026-10-20",
+   "section": "Z oboru krátce",
+   "title": "Import AI 477: In which I tell the IMF the Singularity has begun",
+   "url": "https://importai.substack.com/p/import-ai-477-in-which-i-tell-the",
+   "source": "Jack Clark, 19. 10.",
+   "description": "text přednášky, kterou spoluzakladatel Anthropicu přednesl 17. 10. na zasedání MMF v Bangkoku. Tvrdí, že letos přibyly přesvědčivé doklady o začátku „singularity“, a jako příklad uvádí benchmark TheoPhysEval, v němž modely při kontrole odpovědí našly chyby ve výpočtech expertů. Vyzývá k budování vědecké infrastruktury i ke zdrženlivosti ve vývoji."
+  },
+  {
+   "date": "2026-10-20",
+   "section": "Stojí za pořádné přečtení",
+   "title": "The 50-Year \"Overnight\" AI Revolution",
+   "url": "https://ammaramerhbi.substack.com/p/the-50-year-overnight-ai-revolution",
+   "source": "",
+   "description": "krátký a střízlivý protipól k nadšeným zprávám o AI ve vzdělávání a cesta k původní retrospektivě v Computers & Education."
+  },
+  {
+   "date": "2026-10-20",
+   "section": "Stojí za pořádné přečtení",
+   "title": "Import AI 477",
+   "url": "https://importai.substack.com/p/import-ai-477-in-which-i-tell-the",
+   "source": "",
+   "description": "ucelený výklad, jak jeden z představitelů Anthropicu vidí tempo vývoje AI ve vědě; jde o názor autora, ne o nezávislé hodnocení."
+  },
   {
    "date": "2026-10-19",
    "section": "Pro tvoji práci",
