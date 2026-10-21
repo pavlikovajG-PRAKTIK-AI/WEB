@@ -1,6 +1,31 @@
 {
- "updated": "2026-10-20",
+ "updated": "2026-10-21",
  "items": [
+  {
+   "date": "2026-10-21",
+   "section": "Pro tvoji práci",
+   "title": "AI for UNI 2026: Univerzity v éře umělé inteligence",
+   "url": "https://dny.ai/program/ai-for-uni",
+   "source": "",
+   "description": "Registrace na konferenci byla spuštěna 20. 10. (oznámení Pavlíny Slavíčkové z prg.ai v širší pracovní skupině AI in EDU). Akce se koná 4. 11. 2026 od 13:00 do 16:30 v budově CIIRC ČVUT v Praze-Dejvicích, pořádají ji ČVUT, prg.ai a CZAI, a to jen prezenčně. Zástupci českých vysokých škol a dalších organizací mají mluvit o strategiích a AI iniciativách univerzit, o pravidlech pro využívání AI ve výuce a u závěrečných prací, o vzdělávání akademických i dalších zaměstnanců a o roli AI ve výzkumu. Podrobný program zatím zveřejněn není; účast je zdarma po schválení registrace a dopolední workshop pro doktorandy o dilematech AI má samostatnou přihlášku.",
+   "why": "Proč tě to zajímá: pravidla pro AI u závěrečných prací v podání jiných českých vysokých škol jsou přímý srovnávací materiál pro pracovní skupinu děkana pro AI i pro to, co říkáš diplomantkám."
+  },
+  {
+   "date": "2026-10-21",
+   "section": "Z oboru krátce",
+   "title": "Survey: 48% of Employers Say AI Will Make College Degrees More Important",
+   "url": "https://www.insidehighered.com/news/students/careers/2026/10/20/employers-say-ai-will-make-college-degrees-more-important",
+   "source": "Inside Higher Ed, 20. 10.",
+   "description": "průzkum Lumina Foundation a Gallupu mezi 2 500 zaměstnavateli v USA ze srpna 2026: 48 % čeká, že AI během pěti let zvýší význam vysokoškolského diplomu, 26 % že ho sníží, a 80 % by dalo přednost uchazeči s diplomem i tam, kde ho pozice nevyžaduje. Courtney Brown z Lumina Foundation to vykládá tak, že zaměstnavatelé oceňují úsudek, kritické myšlení, komunikaci a přizpůsobivost; konkrétní dovednosti s AI článek neuvádí."
+  },
+  {
+   "date": "2026-10-21",
+   "section": "Stojí za pořádné přečtení",
+   "title": "AI in Teaching: Preserving Core Pedagogical Principles",
+   "url": "https://www.facultyfocus.com/articles/teaching-with-technology-articles/ai-in-teaching-preserving-core-pedagogical-principles/",
+   "source": "Faculty Focus, 28. 9., odkaz v newsletteru Nika Peacheyho z 20. 10.",
+   "description": "Amal Farhat a Siham Al Amoush nabízejí konkrétní postupy, jak při používání AI udržet hloubku učení: vícekrokové úkoly s doloženým procesem od nápadu po revizi, portfolia s koncepty a poznámkami, prezentace práce před publikem a rovný přístup k nástrojům."
+  },
   {
    "date": "2026-10-20",
    "section": "Pro tvoji práci",
