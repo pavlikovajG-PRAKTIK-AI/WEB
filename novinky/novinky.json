@@ -1,6 +1,47 @@
 {
- "updated": "2026-10-21",
+ "updated": "2026-10-22",
  "items": [
+  {
+   "date": "2026-10-22",
+   "section": "Pro tvoji práci",
+   "title": "What is the Socratic method? Could it be used to test students in an age of AI?",
+   "url": "https://theconversation.com/what-is-the-socratic-method-could-it-be-used-to-test-students-in-an-age-of-ai-287498",
+   "source": "",
+   "description": "Oscar Davis (filozofie a dějiny, Bond University) na The Conversation (13. 10., odkaz v AI Newsletteru UK z 21. 10.) vychází z Platónova dialogu Euthyfrón: cílem sokratovského tázání je dovést člověka k uvědomění, co neví, a odtud začíná učení. Otázka položená AI studenta nic nestojí a odpověď může přeskočit nejistotu, která by jeho vlastní otázku zpřesnila. Úkolem vysoké školy je podle autora chránit podmínky, za kterých studenti ještě poznají mezery ve svém porozumění. Pro hodnocení navrhuje hodnotit i diskusi ve výuce, nahrazovat čistě popisné úkoly reflektivními, nechat studenty pojmenovat a posoudit mezery ve vlastních znalostech a vést je k novým otázkám navazujícím na jejich porozumění.",
+   "why": "Proč tě to zajímá: argumentace i konkrétní formy hodnocení se dají přímo použít při úpravě zadání a hodnocení v předmětech KAJ, kde AI snadno nahradí psaný výstup."
+  },
+  {
+   "date": "2026-10-22",
+   "section": "Z oboru krátce",
+   "title": "Import AI 477: In which I tell the IMF the Singularity has begun",
+   "url": "https://jack-clark.net/2026/10/19/import-ai-477-in-which-i-tell-the-imf-the-singularity-has-begun/",
+   "source": "Jack Clark, Anthropic, 19. 10.; přes Readwise",
+   "description": "text přednášky na zasedání MMF v Bangkoku 17. 10.: Clark tvrdí, že AI už přispívá k vědě na hranici poznání i k vlastnímu vývoji, a cituje interní model Anthropicu, podle něhož by HDP USA mohl do roku 2030 dosáhnout 44 bilionů dolarů, a to za předpokladu dalšího zlepšování a rychlého šíření technologie. Zároveň připomíná rizika (biologické a kybernetické zbraně) a volá po zdrženlivosti a neobvyklých pravidlech pro AI firmy."
+  },
+  {
+   "date": "2026-10-22",
+   "section": "Z oboru krátce",
+   "title": "Big-Big-SycoBench",
+   "url": "https://arxiv.org/abs/2610.15634",
+   "source": "preprint na arXivu z 11. 10.; odkaz v TechMIXu z 21. 10.",
+   "description": "benchmark měří, zda model při hodnocení textu změní skóre po oprávněné kritice a odolá neoprávněnému tlaku (logické klamy, emoce, irelevantní autorita); 450 textů a 5 400 argumentů posoudili lidští anotátoři. U deseti testovaných modelů se podle souhrnu podíl ústupků neplatným argumentům pohyboval od 0,2 do 95 %."
+  },
+  {
+   "date": "2026-10-22",
+   "section": "Z oboru krátce",
+   "title": "TechMIX: AI datacentra se staví na dluh",
+   "url": "https://www.nber.org/papers/w35865",
+   "source": "Matouš Lázňovský, Seznam Zprávy, 21. 10.; jen z e-mailového vydání, odkaz vede na citovanou studii NBER",
+   "description": "srovnání současné výstavby AI infrastruktury s železniční horečkou před krachem roku 1873, opřené o studii Stijna Van Nieuwerburgha pro NBER. Autor upozorňuje na rostoucí podíl dluhového financování a na rychlé zastarávání grafických procesorů a výslovně netvrdí, že krach nastane."
+  },
+  {
+   "date": "2026-10-22",
+   "section": "Stojí za pořádné přečtení",
+   "title": "What is the Socratic method? Could it be used to test students in an age of AI?",
+   "url": "https://theconversation.com/what-is-the-socratic-method-could-it-be-used-to-test-students-in-an-age-of-ai-287498",
+   "source": "",
+   "description": "krátký, dobře argumentovaný text vhodný jako podklad k diskusi se studenty učitelství o tom, k čemu je zkoušení v době AI."
+  },
   {
    "date": "2026-10-21",
    "section": "Pro tvoji práci",
