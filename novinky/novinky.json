@@ -1,6 +1,30 @@
 {
- "updated": "2026-10-22",
+ "updated": "2026-10-23",
  "items": [
+  {
+   "date": "2026-10-23",
+   "section": "Z oboru krátce",
+   "title": "Donating Agent Skills to the Agentic AI Foundation",
+   "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+   "source": "Anthropic, 22. 10.",
+   "description": "Anthropic předává Agent Skills, otevřený standard pro vybavení AI agentů specializovanými znalostmi a postupy (skilly), nadaci Agentic AI Foundation pod Linux Foundation, včetně názvu, loga, organizace na GitHubu a domény. Standard může dál používat a rozvíjet kdokoli i bez členství v nadaci; na jeho údržbě se mají jako jednotlivci podílet lidé z Anthropicu, Googlu, OpenAI a dalších firem."
+  },
+  {
+   "date": "2026-10-23",
+   "section": "Z oboru krátce",
+   "title": "OpenAI wants to Patch the Planet with its own AI",
+   "url": "https://gizmodo.com/openai-wants-to-patch-the-planet-with-its-own-ai-2000829119",
+   "source": "Gizmodo, 21. 10.; zmínka i v AI Secret 22. 10.",
+   "description": "dvě chyby v PHP označované jako PHP2Shell, které by útočníkovi umožnily převzít webový server, byly podle článku nalezeny s pomocí modelu GPT-5.6 Sol a vyšla k nim mimořádná oprava. OpenAI v reakci navrhuje rámec mezinárodní spolupráce při hledání a opravách zranitelností, slibuje 1 miliardu dolarů na dotovaný přístup ke své auditní platformě Daybreak pro organizace zajišťující základní služby a očekává, že podobných nálezů v příštích měsících prudce přibude."
+  },
+  {
+   "date": "2026-10-23",
+   "section": "Stojí za pořádné přečtení",
+   "title": "Donating Agent Skills to the Agentic AI Foundation",
+   "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+   "source": "",
+   "description": "krátké vysvětlení, proč se formát skillů, na kterém stojí i vlastní pracovní postupy s Claudem, stává společným standardem více firem."
+  },
   {
    "date": "2026-10-22",
    "section": "Pro tvoji práci",
