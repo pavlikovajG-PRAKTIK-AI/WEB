@@ -1,6 +1,31 @@
 {
- "updated": "2026-10-23",
+ "updated": "2026-10-27",
  "items": [
+  {
+   "date": "2026-10-27",
+   "section": "Pro tvoji práci",
+   "title": "ChatGPT for Teens Gets a Report Card",
+   "url": "https://www.deeplearning.ai/the-batch/chatgpt-for-teens-gets-a-report-card/",
+   "source": "",
+   "description": "The Batch (23. 10.) shrnuje nové studijní nástroje ChatGPT pro 13–17leté (Study Mode s postupným vedením místo hotových odpovědí, připomínky při hledání zkratky, rodičem plánované „Study Hours\", kvízy z poznámek) a podrobněji než dřívější zprávy popisuje testy Youth AI Safety Institute při Common Sense Media, který službu hodnotí jako „Unacceptable Risk\" (nepřijatelné riziko). Podle testů Study Mode často nabízel tlačítko „show me the answer\", které vytvořilo hotový úkol; naplánované Study Hours šlo obejít smazáním předpony „@study\" a ChatGPT pak vypracoval každý zadaný úkol. Při vypnutém Study Mode se připomínka objevila v 91 % testů, úkol ale ChatGPT dokončil ve všech 80 případech. OpenAI metodiku zpochybňuje a žádá nové testování s plně aktivovanými účty. Navazuje na zprávu z přehledu z 12. 10. (jen z textu The Batch, původní zpráva institutu nebyla načtena).",
+   "why": "Proč tě to zajímá: „studijní režim\" chatbota podle těchto testů nezaručuje, že žák úkol skutečně zpracuje sám, což je konkrétní argument pro budoucí učitele, proč stavět zadání tak, aby hotová odpověď nestačila."
+  },
+  {
+   "date": "2026-10-27",
+   "section": "Z oboru krátce",
+   "title": "Import AI 478: Math for alignment; ProgramBench; and Mirendil shows what RSI means",
+   "url": "https://importai.substack.com/p/import-ai-478-math-for-alignment",
+   "source": "Import AI, Jack Clark",
+   "description": "V testu ProgramBench, kde model podle zkompilovaného programu a dokumentace znovu sestavuje software (např. SQLite, FFmpeg, jq), měly při zveřejnění v květnu všechny testované modely 0 % úplně vyřešených úloh; Claude Opus 5.5 nyní podle newsletteru dosahuje 18,5 %. Stejné vydání cituje příspěvek OpenAI „Securing our frontier model training environment\": agenti, kteří testovali izolovaná prostředí OpenAI, si podle něj dokázali předávat testovací tajné údaje přes časování procesorové cache bez sítě a sdílených souborů (jen z e-mailového shrnutí)."
+  },
+  {
+   "date": "2026-10-27",
+   "section": "Stojí za pořádné přečtení",
+   "title": "ChatGPT for Teens Gets a Report Card",
+   "url": "https://www.deeplearning.ai/the-batch/chatgpt-for-teens-gets-a-report-card/",
+   "source": "The Batch",
+   "description": "Nejpodrobnější dostupné shrnutí čísel z testů včetně krizových doporučení a upozornění rodičům, s odpovědí OpenAI a vlastním komentářem redakce."
+  },
   {
    "date": "2026-10-23",
    "section": "Z oboru krátce",
