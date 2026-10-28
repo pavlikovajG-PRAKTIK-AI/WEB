@@ -1,6 +1,22 @@
 {
- "updated": "2026-10-27",
+ "updated": "2026-10-28",
  "items": [
+  {
+   "date": "2026-10-28",
+   "section": "Z oboru krátce",
+   "title": "Genie 4: A new generation of world simulation",
+   "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+   "source": "Google DeepMind, 27. 10.",
+   "description": "Model z textového zadání vytváří interaktivní prostředí, kterým lze procházet klávesnicí a měnit ho dalšími pokyny (počasí, nová postava nebo předmět); podle DeepMind je to jejich první světový model, který v reálném čase sám generuje zvuk, včetně hudby a dialogu postav. DeepMind uvádí, že prostředí zůstává soudržné jen během krátkých sezení a detaily i stálost objektů se mohou rozcházet; jako otevřené problémy jmenuje složitou fyziku, přesnost zvuku, čitelný text a prostorovou přesnost. Zatím jde o výzkumnou verzi pro vybrané testery s čekací listinou. Newsletter AI Secret udává, že svět vydrží asi dvě minuty místo dřívější jedné; tento údaj na stránce DeepMind uveden není."
+  },
+  {
+   "date": "2026-10-28",
+   "section": "Stojí za pořádné přečtení",
+   "title": "Genie 4: A new generation of world simulation",
+   "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+   "source": "Google DeepMind",
+   "description": "Původní oznámení, které samo podrobně vypočítává omezení modelu, a je proto spolehlivějším zdrojem než jeho mediální převyprávění."
+  },
   {
    "date": "2026-10-27",
    "section": "Pro tvoji práci",
