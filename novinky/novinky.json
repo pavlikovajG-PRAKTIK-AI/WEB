@@ -1,6 +1,39 @@
 {
- "updated": "2026-10-29",
+ "updated": "2026-10-30",
  "items": [
+  {
+   "date": "2026-10-30",
+   "section": "Pro tvoji práci",
+   "title": "How AI agents shape experts' judgment calls",
+   "url": "https://www.anthropic.com/research/agents-judgment-calls",
+   "source": "",
+   "description": "Výzkumníci Anthropicu (studie z 27. 10.) zadali 50 profesionálním analytikům statistickou analýzu pro fiktivní zemědělské družstvo v Claude Code s modelem Claude Opus 4.8. U čtyř rozhodnutí, kde obě možnosti byly obhajitelné, skryté zadání náhodně (hodem mincí) určilo, ke které možnosti se agent přikloní. Analytici zvolili variantu agenta v 86 % případů (náhodou by to bylo asi 50 %); 77 % z nich v odůvodnění zopakovalo argumenty agenta, někdy doslova, ale jen 15 % agenta uvedlo jako důvod, a ti, kdo agenta následovali ve všech čtyřech rozhodnutích, si byli svým závěrem jistí prakticky stejně jako ostatní. Autoři upozorňují, že sklon agenta záměrně zesílili, testovali jediný úkol, jeden obor a jeden model, a že v běžné praxi může být efekt menší; zároveň výslovně píší, že nejde o argument pro méně časté používání AI.",
+   "why": "Proč tě to zajímá: je to empirická opora pro požadavek, aby diplomantky v deklaraci AI popsaly i to, u kterých analytických rozhodnutí jim AI radila, protože i profesionální analytici argumenty agenta převzali, aniž ho uvedli, a podle autorů je takové převzetí úsudku těžké odhalit."
+  },
+  {
+   "date": "2026-10-30",
+   "section": "Z oboru krátce",
+   "title": "Google announces Gemini 4 Carbon with 'significant' coding gains",
+   "url": "https://9to5google.com/2026/10/28/gemini-4-carbon-announcement/",
+   "source": "9to5Google, 28. 10.",
+   "description": "Google představil nový špičkový model Gemini 4 Carbon; podle vlastních údajů Googlu je první v indexu Artificial Analysis Intelligence Index v5.0 (skóre 59) a podle interních testů obsahuje zhruba o polovinu méně nepodložených tvrzení než Gemini 4 Argon. Přístup mají zatím jen vybraní odborníci na kybernetickou obranu, vývojáři, firmy a běžní uživatelé mají přijít na řadu „brzy“ bez konkrétního data. Oznámení vyšlo ve stejný den jako čtvrtletní výsledky společnosti Alphabet, které podle newsletteru AI Secret ukázaly záporný volný peněžní tok kvůli výdajům na AI infrastrukturu."
+  },
+  {
+   "date": "2026-10-30",
+   "section": "Z oboru krátce",
+   "title": "OpenAI Promises Dots to Europe in Weeks",
+   "url": "https://aisecret.us/r/8b697b77?m=95024608-3286-4f6a-b1dd-c925e0a7007c",
+   "source": "AI Secret",
+   "description": "OpenAI podle newsletteru slibuje, že trvale běžící agenti Dots (představení na DevDay 29. 9., v EHP, Švýcarsku a Spojeném království dosud nedostupní) se po jednáních s regulátory během několika týdnů dostanou do většiny Evropy. (jen z e-mailového shrnutí)"
+  },
+  {
+   "date": "2026-10-30",
+   "section": "Stojí za pořádné přečtení",
+   "title": "How AI agents shape experts' judgment calls — plná studie má podrobnou metodiku, výsledky po jednotlivých rozhodnutích i doporučení, jak navrhovat agenty a instituce, aby si lidé úsudek vědomě ponechali; hodí se jako podklad do výuky AI gramotnosti a k diskusi o deklaracích AI.",
+   "url": "",
+   "source": "",
+   "description": ""
+  },
   {
    "date": "2026-10-29",
    "section": "Z oboru krátce",
