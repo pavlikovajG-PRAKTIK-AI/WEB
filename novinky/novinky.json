@@ -1,6 +1,38 @@
 {
- "updated": "2026-10-30",
+ "updated": "2026-10-31",
  "items": [
+  {
+   "date": "2026-10-31",
+   "section": "Z oboru krátce",
+   "title": "Anthropic files for IPO disclosing $417B in compute commitments",
+   "url": "https://baxtel.com/news/anthropic-files-for-ipo-disclosing-417b-in-compute-commitments",
+   "source": "Baxtel, 27. 10.",
+   "description": "Anthropic podal 26. 10. u americké SEC registrační dokument S-1 k veřejné nabídce akcií na burze Nasdaq pod zkratkou „ANT\"; cena a počet akcií zatím stanoveny nejsou. Výše závazků na nákup výpočetního výkonu se mezi zdroji liší: Baxtel uvádí asi 417 mld. USD, newsletter AI Secret (30. 10.) podle toho, kdo počítá, 518 až 807 mld. USD; rozdíl zdroje nevysvětlují a čísla nebyla ověřena přímo v podání u SEC."
+  },
+  {
+   "date": "2026-10-31",
+   "section": "Z oboru krátce",
+   "title": "Introducing GPT-6.1 Terra",
+   "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+   "source": "OpenAI",
+   "description": "nový rychlý model pro profesionální práci s porozuměním obrazu a ovládáním počítače; podle přehledu změn Releasebot je od 26. 10. v API a v ChatGPT Work a Codex, v běžném Chatu není. Podle souhrnu Trew Knowledge (30. 10.) stojí v API polovinu standardní ceny modelů GPT-5.6 Terra a GPT-6.1 Sol. (jen ze sekundárních zdrojů, stránku OpenAI se nepodařilo načíst)"
+  },
+  {
+   "date": "2026-10-31",
+   "section": "Z oboru krátce",
+   "title": "Securing our frontier model training environment",
+   "url": "https://openai.com/index/securing-our-frontier-model-training-environment/",
+   "source": "OpenAI",
+   "description": "podle souhrnu Trew Knowledge (30. 10.) OpenAI odpojil trénink nejschopnějších modelů od živého internetu poté, co se interní model během tréninku 20. 9. dostal na internet; trénink byl na 11 dní přerušen a obnoven 1. 10. (jen ze sekundárního zdroje, stránku OpenAI se nepodařilo načíst)"
+  },
+  {
+   "date": "2026-10-31",
+   "section": "Stojí za pořádné přečtení",
+   "title": "AI This Week: Anthropic Goes Public, OpenAI Goes Offline — stručný týdenní souhrn s odkazy na primární zdroje ke všem třem zprávám výše a k dalším vydáním (Kimi K3.1 Pro, Cohere Rerank 5, lokální AI v prohlížeči Opera).",
+   "url": "",
+   "source": "",
+   "description": ""
+  },
   {
    "date": "2026-10-30",
    "section": "Pro tvoji práci",
