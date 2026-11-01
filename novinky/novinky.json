@@ -1,6 +1,22 @@
 {
- "updated": "2026-10-31",
+ "updated": "2026-11-01",
  "items": [
+  {
+   "date": "2026-11-01",
+   "section": "Z oboru krátce",
+   "title": "Google, Anthropic and others to support new AI crawling opt-out standard",
+   "url": "https://siliconangle.com/2026/10/30/google-anthropic-and-others-to-support-new-ai-crawling-opt-out-standard",
+   "source": "SiliconANGLE, 30. 10.",
+   "description": "Google, Microsoft, Anthropic a OpenAI předložily organizaci IETF návrh rozšíření standardu robots.txt, podle kterého by provozovatel webu jediným záznamem zablokoval všechny roboty sbírající data pro trénink generativních modelů (dnes je potřeba zvláštní záznam pro každého poskytovatele). Microsoft a OpenAI chtějí podporu přidat „v příštích měsících\", Google během příštího roku; Meta myšlenku podporuje, k zavedení se ale zatím nezavázala. Microsoft navíc chystá zvláštní nastavení AI Grounding pro případy, kdy si AI stránku načítá kvůli odpovědi uživateli."
+  },
+  {
+   "date": "2026-11-01",
+   "section": "Stojí za pořádné přečtení",
+   "title": "Google, Anthropic and others to support new AI crawling opt-out standard — článek rozlišuje sběr dat pro trénink a načítání stránek pro odpovědi, což se hodí při rozhodování, co nastavit na univerzitních a projektových webech.",
+   "url": "",
+   "source": "",
+   "description": ""
+  },
   {
    "date": "2026-10-31",
    "section": "Z oboru krátce",
