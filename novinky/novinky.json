@@ -1,6 +1,32 @@
 {
- "updated": "2026-11-01",
+ "updated": "2026-11-02",
  "items": [
+  {
+   "date": "2026-11-02",
+   "section": "Pro tvoji práci",
+   "title": "Proctors' Office investigations into AI plagiarism rise 46% in a year",
+   "url": "https://cherwell.org/2026/11/01/ai-plagiarism-investigations-rise-46/",
+   "source": "",
+   "description": "Studentský list Cherwell (1. 11.) získal na základě žádosti o informace data oxfordské Proctors' Office: šetření neoprávněného užití AI vzrostla z 24 v roce 2024/25 na 35 v roce 2025/26 (v roce 2023/24 bylo jediné). Univerzita uvádí, že počet případů „remains low\" (1,3 šetření na 1 000 studentů); data zahrnují jen sumativní hodnocení zadávaná fakultami a katedrami, ne kolejemi. Od září 2023 připadla více než polovina z 60 šetření (31) na společenské vědy; nejčastějším výsledkem byla opravná zkouška se stropem známky (28 případů), trvalé vyloučení nastalo třikrát a 13 případů skončilo bez dalšího opatření. Neoprávněné užití AI se v Oxfordu vede jako plagiátorství a zprávy Turnitinu se dál používají při rozhodování, zda případ šetřit.",
+   "why": "Proč tě to zajímá: konkrétní čísla a škála postihů z jedné univerzity se hodí do diskuse o tom, jak formulovat pravidla pro užití AI v kvalifikačních pracích a co hrozí při jejich porušení."
+  },
+  {
+   "date": "2026-11-02",
+   "section": "Pro tvoji práci",
+   "title": "Anthropic Extends Invisible Watermarks to Earlier Claude Models",
+   "url": "https://www.tokenpost.com/news/technology/46116",
+   "source": "",
+   "description": "Podle TokenPost (1. 11.) rozšiřuje Anthropic neviditelný textový vodoznak, který od srpna používá u novějších modelů Clauda, i na starší modely; článek je nejmenuje a uvádí zároveň, že rozšíření je plánováno na 3. 11. Vodoznak vzniká úpravou volby slov při generování, podle článku může zůstat po zkopírování a „may survive some editing\", a neidentifikuje osobu, která text vytvořila. Detektor je v neveřejném zkušebním provozu mimo jiné pro regulátory, výzkumníky a vzdělávací instituce; souvisí to s povinnostmi transparentnosti podle článku 50 AI Act, které platí od 2. 8. 2026. Původní oznámení Anthropicu se načíst nepodařilo, údaje jsou jen ze zpravodajství.",
+   "why": "Proč tě to zajímá: když se detekce vodoznaku dostane k vysokým školám, bude potřeba studentům i kolegům vysvětlit, že nalezený vodoznak podle dostupných zpráv nedokazuje autorství (Claude mohl text jen upravit nebo přeložit)."
+  },
+  {
+   "date": "2026-11-02",
+   "section": "Stojí za pořádné přečtení",
+   "title": "Proctors' Office investigations into AI plagiarism rise 46% in a year — článek uvádí úplný rozpis výsledků šetření, odvolání a srovnání s průzkumy HEPI a daty z celé Velké Británie.",
+   "url": "",
+   "source": "",
+   "description": ""
+  },
   {
    "date": "2026-11-01",
    "section": "Z oboru krátce",
