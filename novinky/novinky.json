@@ -1,6 +1,14 @@
 {
- "updated": "2026-11-02",
+ "updated": "2026-11-03",
  "items": [
+  {
+   "date": "2026-11-03",
+   "section": "Z oboru krátce",
+   "title": "Příspěvek zakladatele Exin Therapeutics na X",
+   "url": "https://x.com/OcanaSantero/status/2115442964574908902",
+   "source": "převzato newsletterem AI Secret, 2. 11.",
+   "description": "podle newsletteru agent Claude ve startupu Exin Therapeutics (léčba epilepsie) vybral genovou terapii a místo vpichu a sám provedl injekci do mozku živé myši; lebku dál otevírá veterinář. Podle téhož newsletteru Opus 5.5 úkol odmítl, jakmile rozpoznal biologický kontext, Opus 5 zákrok nacvičil a na živém zvířeti ho odmítl, Sonnet 5 ho provedl a o několik dní později totéž bez námitek udělaly GPT-6.1 Sol a Grok 4.7. Nezávislé zpravodajství se dohledat nepodařilo (jen z e-mailového shrnutí)."
+  },
   {
    "date": "2026-11-02",
    "section": "Pro tvoji práci",
