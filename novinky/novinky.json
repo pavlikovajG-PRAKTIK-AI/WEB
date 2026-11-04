@@ -1,6 +1,40 @@
 {
- "updated": "2026-11-03",
+ "updated": "2026-11-04",
  "items": [
+  {
+   "date": "2026-11-04",
+   "section": "Pro tvoji práci",
+   "title": "Google will block search access for schools that ban AI use",
+   "url": "https://cbsnews.com/news/google-search-access-schools-ai-tools",
+   "source": "",
+   "description": "Google 3. 11. oznámil, že u žákovských účtů K-12 budou Gemini, Gemini Notebook a Gemini in Classroom ve výchozím stavu vypnuté, dokud je správce školy nezapne. Výchozí vypnutí se týká i Google Search; podle článku školy, které AI zakážou, přijdou o přístup k vyhledávání a žáci uvidí hlášení, že služba není dostupná. Kritizují to mimo jiné starosta New Yorku Zohran Mamdani, bývalá předsedkyně FTC Lina Khan a předsedkyně odborů AFT Randi Weingarten. Článek neuvádí, zda změna platí i mimo USA.",
+   "why": "Proč tě to zajímá: budoucí učitelé angličtiny budou ve školách s Google Workspace rozhodovat o zapnutí AI v situaci, kdy dodavatel spojuje AI s dostupností běžného vyhledávání; je to konkrétní případ k diskusi o tom, kdo ve škole o AI rozhoduje."
+  },
+  {
+   "date": "2026-11-04",
+   "section": "Pro tvoji práci",
+   "title": "Opinion: Who wrote UA's AI plan? A chatbot did.",
+   "url": "https://adn.com/opinions/2026/11/03/opinion-who-wrote-uas-ai-plan-a-chatbot-did",
+   "source": "",
+   "description": "Dva docenti University of Alaska Anchorage v názorovém článku pro Anchorage Daily News uvádějí, že první verzi strategického dokumentu „AI Engaged\" pro Board of Regents vygeneroval Claude od Anthropicu a že to bylo až do 9. 10. zamlčeno. Podle autorů tím dokument porušuje vlastní zásadu, že dotčení mají vědět, kdy a jak je AI ovlivňuje, a nevěnuje se akademické integritě ani ztrátě učení. Hlasování o přijetí je naplánováno na 5. 11.; autoři žádají dokument stáhnout a začít znovu. Jde o názor autorů, článek k tvrzení o autorství nepřikládá další dokumentaci.",
+   "why": "Proč tě to zajímá: ukazuje, že požadavek prohlásit užití AI se týká i institucionálních dokumentů, nejen studentských prací, což se hodí pro práci děkanské skupiny pro AI i do výuky o AI deklaracích."
+  },
+  {
+   "date": "2026-11-04",
+   "section": "Z oboru krátce",
+   "title": "Google AI Educator Series expands to four new regions",
+   "url": "https://blog.google/products-and-platforms/products/education/google-ai-educator-series-global-expansion-november-2026/",
+   "source": "Google, 3. 11.",
+   "description": "vzdělávací série pro učitele míří v příštích měsících do Brazílie, Mexika, Španělska, Austrálie a subsaharské Afriky; listopadové moduly (interaktivní hodnocení, výuka hrou, úlohy podporující kritické myšlení) startují 4. 11. v USA."
+  },
+  {
+   "date": "2026-11-04",
+   "section": "Stojí za pořádné přečtení",
+   "title": "The Research on AI in Education Is a Mess",
+   "url": "https://www.edweek.org/technology/the-research-on-ai-in-education-is-a-mess/2026/11",
+   "source": "Education Week, 2. 11., v předchozích přehledech nebylo",
+   "description": "audit Patricka O'Neilla prošel 14 metaanalýz s pozitivními výsledky AI pro učení a podle něj žádná nesplňuje základní výzkumné standardy; citováno je i zjištění Stanfordu, že z více než 800 studií má silný kauzální design jen 20. Užitečné, když studenti a diplomanti citují metaanalýzy o přínosu AI."
+  },
   {
    "date": "2026-11-03",
    "section": "Z oboru krátce",
