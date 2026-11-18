@@ -1,6 +1,80 @@
 {
- "updated": "2026-11-04",
+ "updated": "2026-11-18",
  "items": [
+  {
+   "date": "2026-11-18",
+   "section": "Pro tvoji práci",
+   "title": "The Primer Project: Turning Teacher Expertise into AI-Generated Educational Simulations",
+   "url": "https://gail.wharton.upenn.edu/primer/",
+   "source": "",
+   "description": "Wharton Generative AI Labs zveřejnily Primer, open-source systém, ve kterém vyučující v řízeném rozhovoru s AI (hlasem nebo textem, případně s nahraným sylabem či rubrikou) popíše, co mají studenti procvičit. Z rozhovoru vznikne návrhový dokument s cíli, scénářem, postavami a logikou přizpůsobení, který vyučující zkontroluje a schválí; teprve potom agenti sestaví hratelnou simulaci s režimy hraní rolí (Roleplay) a vysvětlování naučeného (Teachback) a se zpětnou vazbou, a vyučující dostane individuální i souhrnné zprávy. Systém nemá vázaný konkrétní model a podle stránky běží i s lokálními nebo otevřenými modely. Autoři ho sami označují za experimentální prototyp, který nebyl ověřen jako výuková intervence ve třídě ani posouzen z hlediska ochrany osobních údajů studentů; to je na instituci. TechMIX nástroj připisuje Ethanu Mollickovi, stránka projektu ho jménem neuvádí.",
+   "why": "Proč tě to zajímá: hotový postup „nejdřív didaktický návrh, pak teprve AI“ se dá ukázat budoucím učitelům angličtiny jako model pro konverzační a situační simulace a zároveň jako příklad nástroje, který před použitím se studenty vyžaduje posouzení GDPR."
+  },
+  {
+   "date": "2026-11-18",
+   "section": "Pro tvoji práci",
+   "title": "‘AI slop’ papers published under prominent academics’ names",
+   "url": "https://www.timeshighereducation.com/node/745942",
+   "source": "",
+   "description": "Times Higher Education (článek z 9. 11. 2026, dnes ho připomněl newsletter AI Secret) popisuje tři málo známé open-access časopisy (AIJRI, AJAMRI, AJFMR), které publikují AI generované články pod jmény profesorů, kteří je nenapsali, mimo jiné Fei-Fei Li, Christophera Manninga, Michaela I. Jordana a Stuarta Russella. Případ odhalil Alan Said z Göteborské univerzity díky upozornění Google Scholar na „svůj“ článek; po jeho stížnosti článek zmizel a znovu se objevil pod jinými jmény. Všechny tři domény byly registrovány v roce 2026, přesto weby ukazují archivy za několik let zpět a vybírají poplatky za publikaci. Said se obává, že doktorandi uvidí známá jména a začnou tam posílat vlastní práce.",
+   "why": "Proč tě to zajímá: hodí se jako čerstvý příklad pro diplomantky a doktorandy, proč ověřovat časopis (registrace domény, redakční rada, poplatky) a nespoléhat na to, že v něm „publikují“ známí autoři, a proč si hlídat vlastní profil v Google Scholar."
+  },
+  {
+   "date": "2026-11-18",
+   "section": "Z oboru krátce",
+   "title": "New GPT Flunks the Real World",
+   "url": "https://aisecret.us/new-gpt-flunks-the-real-world/",
+   "source": "AI Secret",
+   "description": "podle newsletteru OpenAI 17. 11. vydala GPT-6.2 Astra a Sol s tokeny o 20 % levnějšími a tvrzením, že Astra překoná Claude Fable 5.2 za 5 % ceny; první testeři (Matt Shumer, tým Every, Theo Browne) hlásí, že model u dlouhých programátorských úloh končí předčasně nebo nic nedodá. Oficiální oznámení OpenAI se ověřit nepodařilo (jen z e-mailového shrnutí)."
+  },
+  {
+   "date": "2026-11-18",
+   "section": "Z oboru krátce",
+   "title": "Nadella na Ignite: Copilot jako „operační systém pro práci“",
+   "url": "https://aisecret.us/new-gpt-flunks-the-real-world/",
+   "source": "AI Secret",
+   "description": "šéf Microsoftu se omluvil za výpadek Microsoft 365 a zároveň řekl, že AI v Copilotu nelze z definice plně důvěřovat, a proto má být oddělena od oprávnění jednat; podle newsletteru tato pasáž v upravené verzi projevu chybí (jen z e-mailového shrnutí)."
+  },
+  {
+   "date": "2026-11-18",
+   "section": "Z oboru krátce",
+   "title": "When AI builds itself",
+   "url": "https://www.anthropic.com/institute/recursive-self-improvement",
+   "source": "Anthropic",
+   "description": "Anthropic uvádí, že k květnu 2026 napsal Claude přes 80 % kódu začleněného do jeho kódové základny, a sám dodává, že řádky kódu jsou nedokonalé měřítko a že rekurzivní sebezdokonalování není nevyhnutelné."
+  },
+  {
+   "date": "2026-11-18",
+   "section": "Z oboru krátce",
+   "title": "Independent Assessment of AI R&D Acceleration at Anthropic in October 2026",
+   "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
+   "source": "METR, 5. 11.",
+   "description": "nezávislí hodnotitelé odhadují, že Anthropic nyní zlepšuje schopnosti modelů v dobře zadaných úlohách zhruba dvakrát rychleji než v letech 2024–2025, s rozpětím 1,3× až 3×, a většinu (snad asi 80 %) tohoto zrychlení připisují AI; sami zdůrazňují velkou nejistotu."
+  },
+  {
+   "date": "2026-11-18",
+   "section": "Z oboru krátce",
+   "title": "How models explore ideas",
+   "url": "https://bespokelabs.ai/blog/how-models-explore-ideas",
+   "source": "Bespoke Labs",
+   "description": "podle TechMIXu AI agenti při dlouhém výzkumu většinou zůstanou u prvního nápadu, i když by jim změna směru pomohla víc (jen z e-mailového shrnutí)."
+  },
+  {
+   "date": "2026-11-18",
+   "section": "Stojí za pořádné přečtení",
+   "title": "Primer – white paper na SSRN",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7696720",
+   "source": "",
+   "description": "plný popis didaktického návrhu Primeru, užitečný pro rozhodnutí, zda ho vyzkoušet v didaktice nebo v kurzu CALL."
+  },
+  {
+   "date": "2026-11-18",
+   "section": "Stojí za pořádné přečtení",
+   "title": "METR: Independent Assessment of AI R&D Acceleration at Anthropic",
+   "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
+   "source": "",
+   "description": "vzorový příklad, jak opatrně formulovat odhad s velkou nejistotou, a to i u tématu, kde se jinde přehání."
+  },
   {
    "date": "2026-11-04",
    "section": "Pro tvoji práci",
