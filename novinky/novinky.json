@@ -1,6 +1,22 @@
 {
- "updated": "2026-11-18",
+ "updated": "2026-11-19",
  "items": [
+  {
+   "date": "2026-11-19",
+   "section": "Z oboru krátce",
+   "title": "Změna nastavení soukromí v Gemini Apps (e-mail Google Gemini, 18. 11.) — Google v příštích týdnech nahradí nastavení Keep Activity dvěma samostatnými: jedno určí, jak dlouho se uchovává historie chatů, druhé, zda se obsah chatů včetně příloh používá k trénování generativních modelů. Kdo měl Keep Activity vypnuté, bude mít vypnutá obě nová nastavení, kdo zapnuté, obě zapnutá. I při vypnuté historii se budoucí chaty podle e-mailu uchovávají zhruba 2 měsíce a mohou je číst lidští posuzovatelé. Zpráva přišla na univerzitní adresu; zda se stejně týká i účtů Google Workspace s licencí UJEP, z e-mailu nevyplývá (jen z e-mailového shrnutí).",
+   "url": "",
+   "source": "",
+   "description": ""
+  },
+  {
+   "date": "2026-11-19",
+   "section": "Stojí za pořádné přečtení",
+   "title": "Primer – white paper na SSRN",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7696720",
+   "source": "",
+   "description": "včera jen odkázaný, stále nejužitečnější text týdne pro didaktiku a CALL: popis, jak z rozhovoru s vyučujícím vzniká schválený didaktický návrh a teprve z něj simulace."
+  },
   {
    "date": "2026-11-18",
    "section": "Pro tvoji práci",
