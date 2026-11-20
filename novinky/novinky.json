@@ -1,6 +1,48 @@
 {
- "updated": "2026-11-19",
+ "updated": "2026-11-20",
  "items": [
+  {
+   "date": "2026-11-20",
+   "section": "Pro tvoji práci",
+   "title": "Major U.S. School Districts Consider Ditching Google Over AI",
+   "url": "https://gizmodo.com/nyc-la-and-chicago-school-districts-all-discussing-alternatives-to-ai-pilled-google-2000842174",
+   "source": "",
+   "description": "Školní obvody New Yorku, Los Angeles a Chicaga zvažují, že přestanou používat Google Search, protože Google odmítá nabídnout školám vyhledávání bez AI odpovědí. Podle Chrise Phillipse, viceprezidenta Googlu pro vzdělávání, jsou vyhledávání a AI hluboce propojené, a škola, která AI zakáže, tak podle zpráv přijde i o vyhledávání (CNN, 3. 11.). Los Angeles už studentům vypnulo AI Overviews a podle newsletteru AI Secret uvádí, že výchozí vyhledávač může změnit „literally overnight“; jako alternativy se zmiňují DuckDuckGo a Bing, které AI odpovědi vypnout dovolují. Žádná ze zpráv neuvádí, že by některý z obvodů Google Search už opustil (jen z e-mailového shrnutí a výsledků vyhledávání, článek nebyl načten celý).",
+   "why": "Proč tě to zajímá: je to konkrétní případ pro budoucí učitele, jak rozhodnutí dodavatele mění podmínky ve třídě a proč škola potřebuje vlastní pravidla pro AI nezávislá na jednom nástroji."
+  },
+  {
+   "date": "2026-11-20",
+   "section": "Pro tvoji práci",
+   "title": "Cambridge Dictionary reveals Word of the Year 2026",
+   "url": "https://www.cam.ac.uk/news/cambridge-dictionary-reveals-word-of-the-year-2026",
+   "source": "",
+   "description": "Cambridge Dictionary zvolil slovem roku 2026 „human“. Podle zprávy Cambridgeské univerzity (17. 11.) rok určovaly debaty o tom, co znamená být člověkem, když AI stírá hranici mezi lidmi a stroji; lexikograf Colin McIntosh říká: „AI is changing how we talk about being human.“ Stránka uvádí i příklady jako značku „Human Authored“ od Authors Guild. Newsletter AI Secret a další zprávy dodávají, že roste užití složenin typu „human-made“ a „human-written“ a že v užším výběru byla i slova „agent“ a „analogue“; tyto údaje na stránce univerzity nejsou.",
+   "why": "Proč tě to zajímá: hodí se jako aktuální materiál do hodin angličtiny i didaktiky (nové složeniny, posun významu slova pod vlivem AI) a jako téma k diskusi o označování lidské a AI práce ve studentských textech."
+  },
+  {
+   "date": "2026-11-20",
+   "section": "Z oboru krátce",
+   "title": "Anthropic IPO raises over $81 billion in largest offering on record",
+   "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html",
+   "source": "CNBC",
+   "description": "Anthropic ocenil akcie na 83 USD, nad ohlášeným rozpětím 70–78 USD, prodal asi 980 milionů akcií a získal 81,3 mld. USD, což je podle CNBC největší IPO v historii. Akcie se začaly obchodovat 19. 11. na Nasdaqu pod značkou ANT; podle The National uzavřely první den zhruba 17 % nad emisní cenou."
+  },
+  {
+   "date": "2026-11-20",
+   "section": "Z oboru krátce",
+   "title": "Microsoft agent-framework Compromised",
+   "url": "https://www.wiz.io/blog/malicious-version-of-microsofts-agent-framework-published-to-pypi",
+   "source": "Wiz",
+   "description": "verze 1.26.1 a 1.26.2 oficiálního Python balíčku Microsoftu pro stavbu AI agentů obsahovaly 17. 11. program na krádež přístupových údajů (Azure, CI, tokeny). Z PyPI byly staženy týž večer; poslední bezpečná verze je podle Wiz 1.26.0. Týká se jen těch, kdo balíček instalovali."
+  },
+  {
+   "date": "2026-11-20",
+   "section": "Stojí za pořádné přečtení",
+   "title": "Why is Google cutting off Search from AI-free schools? Here are some theories",
+   "url": "https://www.opb.org/article/2026/11/13/to-use-google-search-schools-have-to-keep-ai-overviews/",
+   "source": "NPR/OPB, 13. 11.",
+   "description": "širší kontext ke sporu Googlu se školami: jaké vysvětlení se nabízí a jak na to reagují obvody."
+  },
   {
    "date": "2026-11-19",
    "section": "Z oboru krátce",
