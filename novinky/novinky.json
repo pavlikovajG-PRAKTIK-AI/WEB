@@ -1,6 +1,47 @@
 {
- "updated": "2026-11-20",
+ "updated": "2026-11-21",
  "items": [
+  {
+   "date": "2026-11-21",
+   "section": "Pro tvoji práci",
+   "title": "Workshop: AI a sentiment ve zpětné vazbě studujícím",
+   "url": "https://newsletter.cuni.cz/NEWSLETTER-7104.html",
+   "source": "",
+   "description": "Tým generativní AI na Univerzitě Karlově zve na online workshop, kde si účastníci prakticky vyzkoušejí, jak může M365 Copilot Chat pomoci formulovat komentáře ke studentským pracím, aby byly srozumitelné, konkrétní a motivovaly k dalšímu zlepšování. Workshop proběhne online 24. listopadu od 14:00. Tentýž newsletter zve na další online workshop „Smysluplné využití AI v pedagogické a administrativní praxi\" (8. 12. od 14:00) o tom, kdy AI ušetří čas a kdy její použití nedává smysl, včetně etických hranic a zachování vlastní odbornosti. Zda jsou workshopy otevřené i lidem mimo UK, z newsletteru nevyplývá (jen z e-mailového shrnutí).",
+   "why": "Proč tě to zajímá: zpětná vazba k psaní studentů je častým místem pro AI v didaktice angličtiny a workshop ukazuje, jak ji pojímá jiná česká univerzita s jiným licencovaným nástrojem (Copilot místo Gemini)."
+  },
+  {
+   "date": "2026-11-21",
+   "section": "Z oboru krátce",
+   "title": "Microsoft to move Claude processing in Copilot into EU Data Boundary",
+   "url": "https://www.edtechinnovationhub.com/news/microsoft-to-move-claude-processing-in-copilot-into-eu-data-boundary",
+   "source": "EdTech Innovation Hub; upozornil AI Newsletter UK",
+   "description": "Microsoft podle oznámení z 5. 11. přesune do konce roku 2026 zpracování dat u modelů Claude v Copilotu do své EU Data Boundary, pro zákazníky v EU a zemích ESVO. Organizace, které Claude už povolily, mají být podle zpráv převedeny automaticky. Zprávy se rozcházejí v tom, od kdy a zda bude Claude u evropských tenantů zapnutý ve výchozím nastavení; primární dokumentace Microsoftu ověřena nebyla."
+  },
+  {
+   "date": "2026-11-21",
+   "section": "Z oboru krátce",
+   "title": "Jensen Huang's Nvidia legacy, Claude Fable 5.2 and Anthropic's IPO, World Labs Releases Atlas to Developers",
+   "url": "https://read.readwise.io/read/01m7w41y8k4bqx783fe65k69b5",
+   "source": "The Batch, DeepLearning.AI",
+   "description": "týdenní přehled: Claude Fable 5.2 se podle shrnutí umisťuje vysoko v několika testech výkonu, je ale drahý a má pojistky pro citlivá použití; World Labs zpřístupnil vývojářům Atlas pro tvorbu 3D scén a řiditelného videa z textu a obrázků (jen z e-mailového shrnutí)."
+  },
+  {
+   "date": "2026-11-21",
+   "section": "Stojí za pořádné přečtení",
+   "title": "Třicet měsíců exponenciálního rozvoje AI",
+   "url": "https://newsletter.cuni.cz/NEWSLETTER-7106.html",
+   "source": "Ethan Mollick, odkaz z AI Newsletteru UK",
+   "description": "u příležitosti vydání nové knihy se Mollick ohlíží za třiceti měsíci vývoje a podle newsletteru ukazuje, že jeho věta „tohle je nejhorší AI, jakou kdy budete používat\" stále platí. Původní článek se nepodařilo dohledat ani ověřit (jen z e-mailového shrnutí)."
+  },
+  {
+   "date": "2026-11-21",
+   "section": "Stojí za pořádné přečtení",
+   "title": "Import AI 481: AI sub-contractors; a wet lab for AI; and subterfuge during development",
+   "url": "https://read.readwise.io/read/01m7janvvy9ga0cbzkbs5ah0p2",
+   "source": "Jack Clark, Import AI",
+   "description": "o AI agentech, kteří utrácejí peníze a najímají jiné systémy, o laboratořích řízených AI a o skrytém sabotování během vývoje, kvůli kterému autor zdůrazňuje potřebu silného dohledu (jen z e-mailového shrnutí)."
+  },
   {
    "date": "2026-11-20",
    "section": "Pro tvoji práci",
