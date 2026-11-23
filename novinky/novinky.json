@@ -1,6 +1,31 @@
 {
- "updated": "2026-11-21",
+ "updated": "2026-11-23",
  "items": [
+  {
+   "date": "2026-11-23",
+   "section": "Pro tvoji práci",
+   "title": "Primer: An AI Framework for Instructor-Centered Educational Simulation Creation",
+   "url": "https://arxiv.org/abs/2611.16986",
+   "source": "",
+   "description": "Systém Primer (Wharton), o kterém byl přehled z 18. 11., má nově i preprint na arXivu (odeslán 12. 11. 2026, verze v1, licence CC BY 4.0; autoři Ethan Mollick, Lilach Mollick, Ben Przystanski, LJ Ciccarelli, Natalie Bach, Laura Zarrow). Abstrakt popisuje Primer jako open-source systém nezávislý na konkrétním jazykovém modelu: vyučující vkládá znalost předmětu, lekce a svých studentů a generativní AI z toho vytváří adaptivní simulace k procvičování. Autoři uvádějí, že možnost použít různé modely, včetně lokálních a otevřených, umožňuje nasazení v různých režimech správy dat. Abstrakt neuvádí žádné výsledky ověřování ve výuce; repozitář autoři zmiňují, adresu ale stránka abstraktu neuvádí.",
+   "why": "Proč tě to zajímá: pro diplomantky a vlastní texty o AI simulacích v přípravě učitelů je to citovatelný zdroj s identifikátorem arXiv:2611.16986, jen je třeba ho uvádět jako preprint bez recenze a bez empirického ověření."
+  },
+  {
+   "date": "2026-11-23",
+   "section": "Z oboru krátce",
+   "title": "Obituaries",
+   "url": "https://stratechery.com/2026/obituaries/",
+   "source": "Ben Thompson, Stratechery; upozornil Wisereads Vol. 170",
+   "description": "komentář k odchodu Jensena Huanga z Nvidie: podle autora byla Nvidia uspořádána kolem jednoho člověka, a bez něj tak hrozí, že se tato struktura rozpadne snáz, než by se čekalo (jen z e-mailového shrnutí)."
+  },
+  {
+   "date": "2026-11-23",
+   "section": "Stojí za pořádné přečtení",
+   "title": "Primer – preprint na arXivu",
+   "url": "https://arxiv.org/abs/2611.16986",
+   "source": "",
+   "description": "volně dostupný popis systému, pokud stojí za zvážení vyzkoušet simulace v didaktice nebo v kurzu CALL."
+  },
   {
    "date": "2026-11-21",
    "section": "Pro tvoji práci",
