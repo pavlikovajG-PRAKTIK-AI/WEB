@@ -1,6 +1,14 @@
 {
- "updated": "2026-11-23",
+ "updated": "2026-11-24",
  "items": [
+  {
+   "date": "2026-11-24",
+   "section": "Z oboru krátce",
+   "title": "SciResearch-Eval: Evaluating Scientific Judgment in Autonomous Experimental Agents",
+   "url": "https://importai.substack.com/p/import-ai-482-huawei-kernel-benchmarks",
+   "source": "Import AI 482, 23. 11. 2026",
+   "description": "benchmark z Lawrence Livermore National Laboratory zkoumá, zda AI agenti u experimentu uvedou poctivý interval nejistoty místo jistého, ale chybného čísla. Podle newsletteru se při simulátoru s chybějící fyzikou spolehlivě osvědčily jen modely GPT-6 Astra a Claude Fable 5.2 při výchozím nastavení, modely Claude 5.5 jen při nejvyšším nastavení uvažování, starší a open-weight modely vůbec. Shrnutí vychází z textu newsletteru, ne z původního preprintu."
+  },
   {
    "date": "2026-11-23",
    "section": "Pro tvoji práci",
