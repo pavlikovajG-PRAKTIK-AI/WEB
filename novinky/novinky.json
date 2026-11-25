@@ -1,6 +1,39 @@
 {
- "updated": "2026-11-24",
+ "updated": "2026-11-25",
  "items": [
+  {
+   "date": "2026-11-25",
+   "section": "Pro tvoji práci",
+   "title": "OP JAK: výzva Pedagogický výzkum (uzávěrka 26. 2. 2027)",
+   "url": "https://www.opjak.cz",
+   "source": "",
+   "description": "Newsletter OP JAK z 24. 11. 2026 uvádí, že MŠMT podpoří pedagogický výzkum a že na projekty spolufinancované z evropských fondů je vyčleněno celkem 155 milionů korun. Výzkum se podle newsletteru zaměří mimo jiné na vliv umělé inteligence na učení žáků. Žádosti lze podávat do 26. února 2027. (jen z e-mailového shrnutí)",
+   "why": "Proč tě to zajímá: je to možný zdroj financování výzkumu o AI ve výuce, o kterém můžeš uvažovat u vlastních projektů nebo s kolegy z katedry."
+  },
+  {
+   "date": "2026-11-25",
+   "section": "Z oboru krátce",
+   "title": "Focus Areas for the Anthropic Institute",
+   "url": "https://www.anthropic.com/research",
+   "source": "Anthropic Research, přes Readwise",
+   "description": "zvýrazněné pasáže se ptají, co se stane s lidským poznáváním, když velká část populace konzultuje stejných pár modelů, a jak měřit vliv „ústavy“ AI na chování nasazeného modelu. (Jen z Readwise zvýraznění, odkaz vede na obecnou stránku výzkumu.)"
+  },
+  {
+   "date": "2026-11-25",
+   "section": "Z oboru krátce",
+   "title": "The Batch: Seedance Makes a Splash, Nvidia's AI-Guided Chip Designs, Helping Robots Not Forget",
+   "url": "https://www.deeplearning.ai/the-batch/",
+   "source": "DeepLearning.AI, přes Readwise",
+   "description": "číslo se věnuje videomodelu Seedance, návrhu čipů řízenému AI a robotům, které nezapomínají. (Jen z názvu a zvýraznění.)"
+  },
+  {
+   "date": "2026-11-25",
+   "section": "Stojí za pořádné přečtení",
+   "title": "The Batch, aktuální číslo",
+   "url": "https://www.deeplearning.ai/the-batch/",
+   "source": "",
+   "description": "Janou zvýrazněná pasáž tvrdí, že trendy silně naznačují, že čistý přírůstek pracovních míst je mnohem větší než jejich zánik, podobně jako u dřívějších technologických vln; stojí za přečtení celého kontextu."
+  },
   {
    "date": "2026-11-24",
    "section": "Z oboru krátce",
