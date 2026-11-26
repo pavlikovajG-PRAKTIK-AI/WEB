@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kritéria hodnocení a varianty testu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <p class="kicker">Pracovní list · PF UJEP · listopad 2026</p>
+    <h1>Kritéria hodnocení a varianty testu</h1>
+    <p class="standfirst">Napsat test s chatbotem už umíte. Tento list vás posune o krok dál: Gemini vám pomůže vyzkoušet kritéria hodnocení dřív, než podle nich začnete hodnotit, a připravit k testu tolik rovnocenných otázek, aby studenti mohli dostávat různé kombinace. Otázky, kritéria i výsledné hodnocení zůstávají ve vašich rukou.</p>
+    <p class="langs"><a href="en.html">English version</a> · <a href="2026_11_01_Kriteria-hodnoceni.docx">verze k tisku (DOCX)</a></p>
+  </div>
+</header>
+
+<div class="wrap">
+
+
+  <section>
+    <div class="band"><span class="no">Příprava</span><h2>Pracovní složka a Gemini</h2></div>
+    <p><b>Do Google Disku i do Gemini se vždy přihlaste služebním účtem v doméně g.ujep.cz, ne soukromým účtem Google.</b> Jinak Gemini nemusí soubory z vaší pracovní složky najít.</p>
+    <p>Všechny podklady k předmětu dejte do jedné složky na Google Disku: sylabus, zkouškové otázky, skripta nebo prezentace a případně starší kritéria hodnocení. Do chatu je pak připojíte jako soubory a nic nekopírujete do okna chatu.</p>
+    <ol class="steps">
+      <li>
+        <p>Otevřete gemini.google.com a zkontrolujte, že jste přihlášeni služebním účtem g.ujep.cz.</p>
+      </li>
+      <li>
+        <p>V poli pro zadání klikněte na nabídku modelů vpravo a zvolte <b>Hlubší analýza (4 Neon)</b>. Ve stejné nabídce otevřete <b>Úroveň myšlení</b> a zvolte <b>Nejvyšší</b>. Úroveň myšlení zkontrolujte vždy, než začnete pracovat.</p>
+      </li>
+      <li>
+        <p>V novém chatu klikněte na <b>+</b> a zvolte <b>Přidat z Disku</b>. Vyberte soubory z pracovní složky, které k úkolu potřebujete.</p>
+      </li>
+      <li>
+        <p>Zadání nemusíte psát, stačí ho nadiktovat přes ikonu mikrofonu. Drobné chyby přepisu obvykle nevadí, výstup ale vždy zkontrolujte.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section>
+    <div class="band"><span class="no">Triky</span><h2>Lepší zadání</h2></div>
+    <ul class="plain"><li><b>Požádejte o doplňující otázky.</b> Na konec zadání připište: <i>Než začneš, zeptej se mě na všechno, co potřebuješ vědět, abys úkol splnil dobře.</i> Gemini se pak obvykle doptá na údaje, které v zadání chybějí.</li><li><b>Výstup v tabulce.</b> Když si výstup vyžádáte jako tabulku, obvykle ho zkopírujete do Wordu nebo Excelu bez přepisování.</li><li><b>Jeden úkol, jeden chat.</b> Postup s kritérii veďte od začátku do konce v jednom chatu, aby Gemini měl všechny předchozí kroky před sebou.</li></ul>
+  </section>
+
+  <section>
+    <div class="band"><span class="no">Opakování</span><h2>Pravidla dobré otázky</h2></div>
+    <ul class="plain"><li>Každá otázka ověřuje jedno téma ze sylabu a otázky dohromady pokrývají sylabus nebo tu jeho část, kterou test ověřuje.</li><li>Znění otázky je jednoznačné a student mu porozumí bez dalšího vysvětlování.</li><li>Otázka neobsahuje dvojí zápor a nenapovídá odpověď na jinou otázku.</li><li>U výběru z možností je správná jen jedna odpověď a nesprávné možnosti jsou věrohodné a podobně dlouhé jako správná.</li><li>Otázky ověřují nejen zapamatování, ale i použití poznatků a jejich zdůvodnění.</li></ul>
+    <p>Pravidla můžete vložit do Gemini spolu se svými otázkami a požádat o kontrolu.</p>
+  </section>
+
+  <section>
+    <div class="band"><span class="no">Základ</span><h2>Kritéria hodnocení, která obstojí</h2></div>
+    <p>Kroky 1 až 4 proveďte v jednom chatu.</p>
+    <ol class="steps">
+      <li>
+        <h3>Návrh kritérií jako tabulka</h3>
+        <div class="prompt">Navrhni ke zkouškovým otázkám kritéria hodnocení jako tabulku:
+řádky = otázky, sloupce = stupně hodnocení.
+Předmět: [doplňte]
+Typ zkoušky: [ústní / písemná s otevřenými odpověďmi]
+Stupnice: [doplňte]
+Otázky a sylabus jsou v připojených souborech.
+Ke každé otázce uveď:
+- co musí odpověď obsahovat, aby student uspěl,
+- co odpověď odlišuje na jednotlivých stupních hodnocení (do buněk tabulky),
+- časté chyby a nepřesnosti, kvůli kterým se hodnocení snižuje (pod tabulku).
+Vycházej jen z připojeného sylabu a podkladů.</div>
+        <p>Návrh si nechte zkontrolovat:</p>
+        <div class="prompt">Projdi kritéria a zvlášť vypiš místa, kde je hranice mezi stupni nejasná
+nebo kde kritérium nevychází ze sylabu. Opravená kritéria vrať celá
+a připoj seznam změn.</div>
+      </li>
+      <li>
+        <h3>Zkouška kritérií na smyšlených odpovědích</h3>
+        <p>Kritéria vyzkoušejte na smyšlených odpovědích, ne na odpovědích studentů.</p>
+        <div class="prompt">Ke každé otázce napiš smyšlené studentské odpovědi: výbornou, hraniční
+(těsně na hranici úspěchu), nedostatečnou a jednu odpověď s typickou chybou.
+Odpovědi zamíchej a neoznačuj, jakou kvalitu mají mít. Klíč napiš zvlášť
+až na konec. Zatím je nehodnoť.</div>
+        <p>Odpovědi nejdřív ohodnoťte sami, klíč zatím nečtěte. Pak Gemini požádejte, aby je ohodnotil podle tabulky kritérií a každé hodnocení zdůvodnil odkazem na konkrétní buňku. Tam, kde se vaše hodnocení liší od hodnocení Gemini nebo od klíče, kritéria upřesněte.</p>
+      </li>
+      <li>
+        <h3>Oponent</h3>
+        <p>Požádejte Gemini, aby kritéria zkusil obejít:</p>
+        <div class="prompt">Hraj roli studenta, který chce projít s co nejmenšími znalostmi. Napiš
+odpověď, která formálně splní kritéria, ale znalost látky neprokazuje.
+Pak navrhni, jak kritéria upravit, aby taková odpověď neprošla.</div>
+      </li>
+      <li>
+        <h3>Konečná podoba kritérií</h3>
+        <p>Ze všech úprav si nechte sestavit jednu konečnou tabulku:</p>
+        <div class="prompt">Ze všech dosavadních úprav sestav jednu konečnou tabulku kritérií.
+Každé kritérium musí vycházet ze sylabu a musí jít ověřit z odpovědi
+studenta. Neurčitá slova (dobře, přiměřeně, dostatečně) nahraď konkrétním
+popisem toho, co odpověď obsahuje. Hranice mezi stupni musí být jednoznačné
+a stupně se nesmějí překrývat. Pod tabulku vypiš, co jsi změnil.</div>
+        <p>U ústní zkoušky si ke každé otázce vyžádejte i doplňující otázky, které pomohou rozhodnout mezi sousedními stupni.</p>
+      </li>
+      <li>
+        <h3>Upravte kritéria podle sebe</h3>
+        <p>Kritéria projděte a upravte podle toho, jak skutečně hodnotíte. Hotová kritéria můžete studentům zveřejnit před zkouškou.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section>
+    <div class="band"><span class="no">Rozšíření</span><h2>Různé varianty testu</h2></div>
+    <ol class="steps">
+      <li>
+        <h3>V Moodlu</h3>
+        <p>Ke každé otázce testu si nechte vytvořit sadu rovnocenných variant ve formátu GIFT (postup z říjnového listu) a každou sadu uložte do vlastní kategorie:</p>
+        <div class="prompt">Ke každé otázce testu vytvoř [doplňte počet] rovnocenných variant ve formátu GIFT.
+Varianty ověřují stejné téma stejným typem otázky a se stejnou obtížností,
+ale liší se příkladem, údaji nebo textem. Každou sadu uveď řádkem
+$CATEGORY: [název testu]/[číslo otázky] [téma]
+s prázdným řádkem před ním i za ním.
+Test je v připojeném souboru.</div>
+        <p>Při importu do banky otázek zaškrtněte volbu, která převezme kategorie ze souboru (v anglickém rozhraní <b>Get category from file</b>). Pak přidejte do testu náhodnou otázku z každé kategorie. Moodle při každém pokusu vybere z každé kategorie jednu otázku náhodně, takže studenti pravděpodobně dostanou různé kombinace.</p>
+      </li>
+      <li>
+        <h3>Na papíře</h3>
+        <p>Když píše test víc skupin za sebou, připravte z jednoho testu další variantu:</p>
+        <div class="prompt">Z připojeného testu vytvoř variantu B. Každá otázka varianty B musí ověřovat
+stejné téma, stejným typem otázky a se stejnou obtížností jako odpovídající
+otázka varianty A, ale odpověď na ni nesmí jít opsat z varianty A.
+Otázky ve variantě B seřaď jinak. Na konec přidej tabulku: číslo ve variantě A,
+číslo ve variantě B, téma, otázka A, otázka B, a klíč správných odpovědí
+k oběma variantám.</div>
+      </li>
+      <li>
+        <h3>Kontrola obtížnosti</h3>
+        <p>Požádejte Gemini, aby varianty porovnal a vypsal otázky, které jsou zjevně lehčí nebo těžší než ostatní ve stejné sadě. O tom, zda jsou rovnocenné, rozhodujete vy.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section>
+    <div class="band"><span class="no">Limity</span><h2>Údaje studentů a kontrola výstupů</h2></div>
+    <p>Do pracovní složky ani do Gemini nedávejte jména studentů ani jejich skutečné odpovědi a výsledky. Ke zkoušení kritérií slouží smyšlené odpovědi. Gemini se může mýlit ve věcném obsahu i v odhadu obtížnosti, proto kritéria a varianty před použitím vždy zkontrolujte sami.</p>
+  </section>
+
+  <div class="warn">
+    <p><b>Shrnutí.</b> Podklady mějte v jedné složce na Disku a do chatu je připojte jako soubory. Kritéria vyzkoušejte na smyšlených odpovědích a nechte je napadnout oponentem. Rovnocenné otázky uložte do kategorií a test sestavte z náhodných otázek.</p>
+  </div>
+
+  <footer>
+    <p>Mgr. Jana Pavlíková, M.A., Ph.D. · Katedra anglistiky · PF UJEP · jana.pavlikova@ujep.cz</p>
+  </footer>
+
+</div>
+</body>
+</html>

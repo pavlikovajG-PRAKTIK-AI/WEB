@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Assessment Criteria and Test Versions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <p class="kicker">Worksheet · Faculty of Education, UJEP · November 2026</p>
+    <h1>Assessment Criteria and Test Versions</h1>
+    <p class="standfirst">You already know how to write a test with a chatbot. This worksheet takes you a step further: Gemini will help you try out your assessment criteria before you start marking with them, and prepare enough equivalent questions for a test that students can receive different combinations. The questions, the criteria and the final marks remain in your hands.</p>
+    <p class="langs"><a href="./">Česká verze</a> · <a href="2026_11_01_Assessment-criteria.docx">printable version (DOCX)</a></p>
+  </div>
+</header>
+
+<div class="wrap">
+
+
+  <section>
+    <div class="band"><span class="no">Preparation</span><h2>A working folder and Gemini</h2></div>
+    <p><b>Always sign in to Google Drive and to Gemini with your work account in the g.ujep.cz domain, not with a personal Google account.</b> Otherwise Gemini may not find the files in your working folder.</p>
+    <p>Put all the materials for your course in one Google Drive folder: the syllabus, exam questions, course textbooks or lecture notes, slides, and any earlier assessment criteria. You then attach them to the chat as files, and you do not copy anything into the chat window.</p>
+    <ol class="steps">
+      <li>
+        <p>Open gemini.google.com and check that you are signed in with your g.ujep.cz work account.</p>
+      </li>
+      <li>
+        <p>In the prompt box, click the model menu on the right and choose <b>Deeper analysis (4 Neon)</b>. In the same menu, open <b>Thinking level</b> and choose <b>High</b>. Check the thinking level every time before you start working.</p>
+      </li>
+      <li>
+        <p>In a new chat, click <b>+</b> and choose <b>Add from Drive</b>. Select the files from your working folder that you need for the task.</p>
+      </li>
+      <li>
+        <p>You do not have to type your prompt; you can dictate it using the microphone icon. Minor transcription errors usually do not matter, but always check the output.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section>
+    <div class="band"><span class="no">Tips</span><h2>Better prompts</h2></div>
+    <ul class="plain"><li><b>Ask for clarifying questions.</b> End your prompt with: <i>Before you start, ask me about anything you need to know to do this task well.</i> Gemini will then usually ask for the details missing from your prompt.</li><li><b>Output as a table.</b> If you ask for the output as a table, you can usually copy it into Word or Excel without retyping.</li><li><b>One task, one chat.</b> Keep the whole criteria procedure in one chat from start to finish, so that Gemini has all the previous steps in front of it.</li></ul>
+  </section>
+
+  <section>
+    <div class="band"><span class="no">Recap</span><h2>Rules for good questions</h2></div>
+    <ul class="plain"><li>Each question tests one syllabus topic, and together the questions cover the syllabus, or the part of it that the test assesses.</li><li>The wording of each question is unambiguous, and students can understand it without further explanation.</li><li>A question contains no double negatives and does not give away the answer to another question.</li><li>In multiple-choice questions, only one answer is correct, and the incorrect options are plausible and of similar length to the correct one.</li><li>The questions test not only recall but also the application of knowledge and the reasoning behind it.</li></ul>
+    <p>You can paste these rules into Gemini together with your questions and ask it to check your questions against them.</p>
+  </section>
+
+  <section>
+    <div class="band"><span class="no">Core task</span><h2>Assessment criteria that hold up</h2></div>
+    <p>Carry out steps 1 to 4 in one chat.</p>
+    <ol class="steps">
+      <li>
+        <h3>Draft the criteria as a table</h3>
+        <div class="prompt">Draft assessment criteria for these exam questions as a table:
+rows = questions, columns = grades.
+Course: [fill in]
+Type of exam: [oral / written with open answers]
+Grading scale: [fill in]
+The questions and the syllabus are in the attached files.
+For each question, state:
+- what an answer must contain for the student to pass,
+- what distinguishes an answer at each grade (in the table cells),
+- common errors and inaccuracies that lower the grade (below the table).
+Base the criteria only on the attached syllabus and materials.</div>
+        <p>Have the draft checked:</p>
+        <div class="prompt">Go through the criteria and list separately the places where the boundary
+between grades is unclear or where a criterion does not follow from the
+syllabus. Return the corrected criteria in full, with a list of changes.</div>
+      </li>
+      <li>
+        <h3>Test the criteria on invented answers</h3>
+        <p>Try the criteria out on invented answers, not on students' answers.</p>
+        <div class="prompt">For each question, write invented student answers: an excellent one,
+a borderline one (just at the pass mark), a failing one and one containing
+a typical error. Shuffle the answers and do not label their intended quality.
+Give the key separately at the very end. Do not grade them yet.</div>
+        <p>Grade the answers yourself first, without reading the key. Then ask Gemini to grade them against the criteria table and to justify each grade by referring to a specific cell. Wherever your grade differs from Gemini's or from the key, make the criteria more precise.</p>
+      </li>
+      <li>
+        <h3>Devil&#x27;s advocate</h3>
+        <p>Ask Gemini to try to get round the criteria:</p>
+        <div class="prompt">Play the role of a student who wants to pass with as little knowledge as
+possible. Write an answer that formally meets the criteria but does not
+demonstrate knowledge of the subject. Then suggest how to revise the
+criteria so that such an answer would fail.</div>
+      </li>
+      <li>
+        <h3>The final version of the criteria</h3>
+        <p>Have all the revisions combined into one final table:</p>
+        <div class="prompt">Combine all the revisions so far into one final table of criteria.
+Every criterion must follow from the syllabus and must be verifiable
+from the student&#x27;s answer. Replace vague words (well, adequately,
+sufficiently) with a concrete description of what the answer contains.
+The boundaries between grades must be unambiguous and the grades must
+not overlap. Below the table, list what you changed.</div>
+        <p>For an oral exam, also ask for follow-up questions for each exam question that will help you decide between neighbouring grades.</p>
+      </li>
+      <li>
+        <h3>Adapt the criteria to your own practice</h3>
+        <p>Go through the criteria and adjust them to reflect how you actually mark. You can share the final criteria with students before the exam.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section>
+    <div class="band"><span class="no">Extension</span><h2>Different versions of a test</h2></div>
+    <ol class="steps">
+      <li>
+        <h3>In Moodle</h3>
+        <p>For each question in the test, have Gemini create a set of equivalent versions in GIFT format (following the procedure in the October worksheet), and save each set in its own category:</p>
+        <div class="prompt">For each question in the test, create [fill in number] equivalent versions
+in GIFT format. The versions test the same topic, with the same question
+type and the same difficulty, but differ in the example, data or text.
+Head each set with the line
+$CATEGORY: [test name]/[question number] [topic]
+with a blank line before and after it.
+The test is in the attached file.</div>
+        <p>When importing into the question bank, tick <b>Get category from file</b>. Then add a random question from each category to the quiz. On each attempt, Moodle selects one question at random from each category, so students are likely to receive different combinations.</p>
+      </li>
+      <li>
+        <h3>On paper</h3>
+        <p>When several groups sit the test one after another, prepare a second version of the same test:</p>
+        <div class="prompt">Create version B of the attached test. Each question in version B must
+test the same topic, with the same question type and the same difficulty,
+as the corresponding question in version A, but it must not be possible
+to copy its answer from version A. Put the questions in version B in a
+different order. At the end, add a table: number in version A, number in
+version B, topic, question A, question B, and an answer key for both versions.</div>
+      </li>
+      <li>
+        <h3>Checking difficulty</h3>
+        <p>Ask Gemini to compare the versions and list any questions that are clearly easier or harder than the others in the same set. Whether the versions are equivalent is your decision.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section>
+    <div class="band"><span class="no">Limitations</span><h2>Student data and checking the output</h2></div>
+    <p>Do not put students' names, their real answers or their results into the working folder or into Gemini. Use invented answers to test the criteria. Gemini can make mistakes in subject content and in estimating difficulty, so always check the criteria and the test versions yourself before you use them.</p>
+  </section>
+
+  <div class="warn">
+    <p><b>Summary.</b> Keep your materials in one Drive folder and attach them to the chat as files. Test the criteria on invented answers and let a devil's advocate challenge them. Save equivalent questions in categories and build the quiz from random questions.</p>
+  </div>
+
+  <footer>
+    <p>Mgr. Jana Pavlíková, M.A., Ph.D. · Department of English · Faculty of Education, UJEP · jana.pavlikova@ujep.cz</p>
+  </footer>
+
+</div>
+</body>
+</html>
