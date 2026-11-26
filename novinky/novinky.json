@@ -1,6 +1,30 @@
 {
- "updated": "2026-11-25",
+ "updated": "2026-11-26",
  "items": [
+  {
+   "date": "2026-11-26",
+   "section": "Z oboru krátce",
+   "title": "Zlatý věk vědy na dosah? Optimisté věří, že ji AI dokáže „odbrzdit\" (TechMIX, Seznam Zprávy, 25. 11. 2026) — Newsletter shrnuje, proč se věda zpomaluje (rostoucí počet článků, „břemeno znalostí“, hodnocení podle počtu citací), a uvádí studii na vzorku 41,3 milionu přírodovědných článků: vědci používající AI publikují zhruba třikrát víc a mají zhruba pětkrát víc citací, výzkum s AI jako celek ale pokrývá o necelých pět procent užší okruh témat. Zdroj, který newsletter cituje, je UChicago Data Science (jen z e-mailového shrnutí, plný text nenačten).",
+   "url": "",
+   "source": "",
+   "description": ""
+  },
+  {
+   "date": "2026-11-26",
+   "section": "Z oboru krátce",
+   "title": "Jak AI urychluje vývoj AI?",
+   "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
+   "source": "METR, odkaz z TechMIX",
+   "description": "Hodnocení urychlení výzkumu a vývoje AI u Anthropicu; jen z odkazu v newsletteru, obsah nečten."
+  },
+  {
+   "date": "2026-11-26",
+   "section": "Stojí za pořádné přečtení",
+   "title": "Studie UChicago o AI a zúžení témat ve vědě",
+   "url": "https://datascience.uchicago.edu/insights/new-research-shows-how-ai-tools-are-expanding-individual-capabilities-while-contracting-scientific-attention/",
+   "source": "",
+   "description": "Primární zdroj k údajům o publikování s AI; stojí za přečtení celý, než se údaje použijí dál."
+  },
   {
    "date": "2026-11-25",
    "section": "Pro tvoji práci",
